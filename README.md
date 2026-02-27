@@ -1,10 +1,6 @@
 # 🧠 Rafael Junqueira  
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00C896&center=true&vCenter=true&width=600&lines=Python+Developer;Artificial+Intelligence+Enthusiast;LangChain+%7C+RAG+%7C+Machine+Learning;Transformando+código+em+inteligência" />
-</p>
 
----
 
 ## 👨🏻‍💻 Sobre mim
 
@@ -55,18 +51,6 @@ Acredito que tecnologia vai além do código — trata-se de
 
 ---
 
-## 📊 Estatísticas
-
-<p align="center">
-  <img 
-    height="180" 
-    src="https://github-readme-stats.vercel.app/api?username=rafaeljs08&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
-  />
-  <img 
-    height="180" 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafaeljs08&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=8" 
-  />
-</p>
 
 ---
 
