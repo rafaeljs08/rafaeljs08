@@ -4,7 +4,7 @@
 
 ## 👨🏻‍💻 Sobre mim
 
-Sou estudante do **5º período de Sistemas de Informação** no  
+Sou estudante do **6º período de Sistemas de Informação** no  
 **Centro Universitário de Itajubá (FEPI)**.
 
 Tenho foco em **Python, Inteligência Artificial e análise de dados**,  
