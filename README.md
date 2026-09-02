@@ -1,69 +1,79 @@
-<div align="center">
+# 🧠 Rafael Junqueira  
 
-# Rafael Junqueira
 
-**Sistemas de Informação · FEPI (Itajubá/MG)**
 
-Python · Django · Dados · Backend
+## 👨🏻‍💻 Sobre mim
 
-[![GitHub](https://img.shields.io/badge/GitHub-rafaeljs08-0f172a?style=flat-square&logo=github)](https://github.com/rafaeljs08)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rafael%20Junqueira-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rafael-junqueira-0228b52b3/)
+Sou estudante do **6º período de Sistemas de Informação** no  
+**Centro Universitário de Itajubá (FEPI)**.
 
-</div>
+Tenho foco em **Python, Inteligência Artificial e análise de dados**,  
+buscando desenvolver soluções inteligentes com aplicação prática no mercado.
 
----
+Atualmente aprofundando conhecimentos em:
 
-Estudante do **6º período de Sistemas de Informação** no Centro Universitário de Itajubá (FEPI). Trabalho com **Python, Django e análise de dados**, com interesse em IA aplicada e produtos que resolvem um problema real.
+- 🤖 Machine Learning  
+- 🔗 LangChain & Arquiteturas RAG  
+- 📊 Análise e Visualização de Dados  
+- 🌐 Integração com APIs  
+- 🚀 Desenvolvimento de aplicações com Streamlit  
 
-Hoje o foco está em:
-
-- Backend web com **Django** (CRUD, modelos, templates e regras de negócio)
-- Análise de dados com **Pandas**, visualização e dashboards em **Streamlit**
-- Integração com APIs e fundamentos de **Machine Learning / RAG**
-
----
-
-## Projetos em destaque
-
-| Projeto | O que é | Stack |
-|---------|---------|-------|
-| [**escalacao-brasileirao**](https://github.com/rafaeljs08/escalacao-brasileirao) | Monte um time da Série A em um campo interativo, com jogadores de qualquer clube e CRUD completo pelo site | Django · Python · SQLite |
-| [**cartao-identidade-academica**](https://github.com/rafaeljs08/cartao-identidade-academica) | Cartão digital de aluno (nome, curso e bio) no estilo ficha acadêmica | Django · Python · SQLite |
-| [**analisador-vendas-marketing**](https://github.com/rafaeljs08/analisador-vendas-marketing) | KPIs, ranking de produtos e sugestões de marketing a partir de um CSV | Python · Pandas |
-| [**crypto-tech**](https://github.com/rafaeljs08/crypto-tech) | Dashboard de criptomoedas em tempo real e histórico (CoinGecko) | Python · Streamlit |
-| [**api-rest-spring-boot**](https://github.com/rafaeljs08/api-rest-spring-boot) | API REST acadêmica com persistência relacional | Java · Spring Boot · MySQL |
+Acredito que tecnologia vai além do código — trata-se de  
+**criar sistemas capazes de aprender, analisar e gerar impacto real.**
 
 ---
 
-## Stack
-
-`Python` · `Django` · `SQLite` · `Pandas` · `Streamlit` · `Java` · `Spring Boot` · `MySQL` · `Git` · `HTML/CSS`
+## 🌐 Conecte-se comigo
 
 <p align="center">
-  <img height="36" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-  <img height="36" alt="Django" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
-  <img height="36" alt="Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" />
-  <img height="36" alt="Streamlit" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" />
-  <img height="36" alt="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-  <img height="36" alt="Spring" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
-  <img height="36" alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-  <img height="36" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+  <a href="https://github.com/rafaeljs08">
+    <img src="https://img.shields.io/badge/GitHub-0f172a?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  <a href="https://www.linkedin.com/in/rafael-junqueira-0228b52b3/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://instagram.com/rafaelljunqueira">
+    <img src="https://img.shields.io/badge/Instagram-1a1b27?style=for-the-badge&logo=instagram&logoColor=E4405F"/>
+  </a>
 </p>
 
 ---
 
-## Formação
+## 🤖 Stack Tecnológica
 
-**Sistemas de Informação** — Centro Universitário de Itajubá (FEPI) · 6º período
+<p align="center">
+
+  <!-- Linguagem Principal -->
+  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+
+  <!-- Dados -->
+  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" />
+  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" />
+  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" />
+
+  <!-- Web / Apps -->
+  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" />
+
+  <!-- Versionamento -->
+  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+
+  <!-- Banco de Dados -->
+  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+
+  <!-- API -->
+  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" />
+
+</p>
 
 ---
 
-## Contato
+## 🧠 Filosofia
 
-- GitHub: [rafaeljs08](https://github.com/rafaeljs08)
-- LinkedIn: [rafael-junqueira](https://www.linkedin.com/in/rafael-junqueira-0228b52b3/)
-- Instagram: [@rafaelljunqueira](https://instagram.com/rafaelljunqueira)
+> "Dados são o novo petróleo, mas inteligência é a refinaria."
+
+---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=rafaeljs08&show_icons=true&theme=transparent&hide_border=true&locale=pt-br&include_all_commits=true" alt="Estatísticas GitHub" height="140" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:00C896&height=120&section=footer"/>
 </p>
