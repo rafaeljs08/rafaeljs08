@@ -1,0 +1,10 @@
+{
+  "owner": "rafaeljs08",
+  "projects": [
+    {"repo": "analisador-vendas-marketing", "label": "analisador-vendas", "stack": "Python · Pandas"},
+    {"repo": "crypto-tech", "label": "crypto-tech", "stack": "Python · Pandas · API"},
+    {"repo": "escalacao-brasileirao", "label": "escalacao-brasileirao", "stack": "Django · SQLite"},
+    {"repo": "cartao-identidade-academica", "label": "cartao-identidade", "stack": "Django · SQLite"},
+    {"repo": "api-rest-spring-boot", "label": "api-rest-spring-boot", "stack": "Java · Spring · MySQL"}
+  ]
+}

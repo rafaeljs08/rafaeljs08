@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 330" width="830" height="330" role="img" aria-label="Atividade recente nos repositórios, atualizada em 29/10/2026">
+<style>
+.k{font:600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;letter-spacing:.14em;fill:#5F5E59}
+.n{font:600 17px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;fill:#111111}
+.s{font:400 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;fill:#5F5E59}
+</style>
+<rect width="830" height="330" rx="20" fill="#F4F2EE"/>
+<rect x="0.5" y="0.5" width="829" height="329" rx="19.5" fill="none" stroke="#CFCBC3"/>
+<text class="k" x="36" y="40">ATIVIDADE RECENTE</text>
+<text class="k" x="794" y="40" text-anchor="end">ATUALIZADO EM 29/10/2026</text>
+<line x1="36" y1="54" x2="794" y2="54" stroke="#CFCBC3"/>
+<text class="n" x="36" y="78">escalacao-brasileirao</text>
+<text class="s" x="36" y="96">Django · SQLite</text>
+<rect x="400" y="68" width="280" height="6" rx="3" fill="#CFCBC3"/>
+<rect x="400" y="68" width="237" height="6" rx="3" fill="#C2410C"/>
+<text class="s" x="794" y="78" text-anchor="end">há 1 mês</text><text class="n" x="36" y="124">cartao-identidade</text>
+<text class="s" x="36" y="142">Django · SQLite</text>
+<rect x="400" y="114" width="280" height="6" rx="3" fill="#CFCBC3"/>
+<rect x="400" y="114" width="236" height="6" rx="3" fill="#C2410C"/>
+<text class="s" x="794" y="124" text-anchor="end">há 1 mês</text><text class="n" x="36" y="170">crypto-tech</text>
+<text class="s" x="36" y="188">Python · Pandas · API</text>
+<rect x="400" y="160" width="280" height="6" rx="3" fill="#CFCBC3"/>
+<rect x="400" y="160" width="93" height="6" rx="3" fill="#C2410C"/>
+<text class="s" x="794" y="170" text-anchor="end">há 8 meses</text><text class="n" x="36" y="216">analisador-vendas</text>
+<text class="s" x="36" y="234">Python · Pandas</text>
+<rect x="400" y="206" width="280" height="6" rx="3" fill="#CFCBC3"/>
+<rect x="400" y="206" width="82" height="6" rx="3" fill="#C2410C"/>
+<text class="s" x="794" y="216" text-anchor="end">há 8 meses</text><text class="n" x="36" y="262">api-rest-spring-boot</text>
+<text class="s" x="36" y="280">Java · Spring · MySQL</text>
+<rect x="400" y="252" width="280" height="6" rx="3" fill="#CFCBC3"/>
+<rect x="400" y="252" width="17" height="6" rx="3" fill="#C2410C"/>
+<text class="s" x="794" y="262" text-anchor="end">há 11 meses</text>
+</svg>
