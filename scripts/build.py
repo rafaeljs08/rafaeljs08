@@ -32,6 +32,40 @@ def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
+PHRASES = ["Olá, me chamo Rafael Junqueira",
+           "Estudante de Sistemas de Informação",
+           "Dev full stack · Dados · IA aplicada"]
+CW, DUR = 13.2, 15  # largura do caractere (px) e duração do ciclo (s)
+
+
+def typing(t):
+    """Letreiro: cada frase é digitada, fica parada e é apagada. Só transform/opacity."""
+    css, body = [], []
+    slot = 100 / len(PHRASES)
+    for k, ph in enumerate(PHRASES):
+        n, full = len(ph), len(ph) * CW
+        s = k * slot
+        e1, e2, e3 = s + 10.7, s + 28, s + 32
+        css.append(
+            f"@keyframes g{k}{{0%,{max(s - .01, 0):.2f}%{{opacity:{1 if k == 0 else 0}}}"
+            f"{s:.2f}%,{e3:.2f}%{{opacity:1}}{e3 + .01:.2f}%,100%{{opacity:0}}}}"
+            f"@keyframes m{k}{{{s:.2f}%{{transform:translateX(0);animation-timing-function:steps({n})}}"
+            f"{e1:.2f}%{{transform:translateX({full:.1f}px)}}"
+            f"{e2:.2f}%{{transform:translateX({full:.1f}px);animation-timing-function:steps({n})}}"
+            f"{e3:.2f}%,100%{{transform:translateX(0)}}}}"
+            f".g{k}{{animation:g{k} {DUR}s linear infinite;opacity:0}}"
+            f".m{k}{{animation:m{k} {DUR}s linear infinite}}")
+        body.append(
+            f'<g class="g{k}"><text class="t" x="36" y="52" textLength="{full:.1f}" lengthAdjust="spacing">{esc(ph)}</text>'
+            f'<g class="m{k}"><rect x="36" y="28" width="{full + 24:.1f}" height="32" fill="{t["bg"]}"/>'
+            f'<rect class="cr" x="36" y="32" width="2.5" height="24" fill="{t["accent"]}"/></g></g>')
+    css.append(".cr{animation:b 1s steps(1) infinite}@keyframes b{50%{opacity:0}}")
+    css.append("@media (prefers-reduced-motion:reduce){.g0{animation:none;opacity:1}"
+               ".g1,.g2{display:none}.m0{animation:none;transform:translateX(%.1fpx)}.cr{display:none}}"
+               % (len(PHRASES[0]) * CW))
+    return "".join(css), "".join(body)
+
+
 def hero(t):
     avatar = base64.b64encode((ASSETS / "avatar.png").read_bytes()).decode()
     h, size, ax, ay = 300, 196, 596, 52
@@ -48,18 +82,21 @@ def hero(t):
             dots.append(
                 f'<circle class="d" style="animation-delay:{c * 0.12:.2f}s" '
                 f'cx="{x}" cy="{y}" r="{rad:.2f}"/>')
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-label="Rafael Junqueira — dados brutos, decisões claras">
+    tcss, tbody = typing(t)
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-label="Olá, me chamo Rafael Junqueira. Dados brutos, decisões claras.">
 <style>
 .k{{font:600 12px {MONO};letter-spacing:.14em;fill:{t['muted']}}}
 .h{{font:400 52px/1 {SERIF};fill:{t['ink']};letter-spacing:-.02em}}
 .a{{font-style:italic;fill:{t['accent']}}}
+.t{{font:500 22px {MONO};fill:{t['ink']}}}
+{tcss}
 .d{{fill:{t['dot']};opacity:.85;animation:p 3.6s ease-in-out infinite}}
 @keyframes p{{0%,100%{{opacity:.25}}50%{{opacity:.9}}}}
 @media (prefers-reduced-motion:reduce){{.d{{animation:none;opacity:.7}}}}
 </style>
 <rect width="{W}" height="{h}" rx="20" fill="{t['bg']}"/>
 <rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="19.5" fill="none" stroke="{t['rule']}"/>
-<text class="k" x="36" y="52">RAFAEL JUNQUEIRA · SISTEMAS DE INFORMAÇÃO</text>
+{tbody}
 <text class="h" x="36" y="132">Dados brutos,</text>
 <text class="h a" x="36" y="192">decisões claras.</text>
 <rect x="36" y="228" width="44" height="3" fill="{t['accent']}"/>
@@ -71,6 +108,33 @@ def hero(t):
 <text class="k" x="{W - 36}" y="{h - 22}" text-anchor="end">ITAJUBÁ · MG</text>
 </svg>
 """
+
+
+STACK = [("Python", "python-original"), ("PHP", "php-original"),
+         ("JavaScript", "javascript-original"), ("Java", "java-original"),
+         ("MySQL", "mysql-original"), ("Django", "django-plain"),
+         ("Pandas", "pandas-original"), ("Streamlit", "streamlit-original"),
+         ("n8n", "n8n-original"), ("Git", "git-original"), ("GitHub", "github-original")]
+
+
+def stack():
+    """Faixa de ícones (devicon, MIT) embutidos: sem depender de CDN. Tema único, tiles claros."""
+    import re
+    tw, th, n = 64, 92, len(STACK)
+    gap = (W - n * tw) / (n - 1)
+    out = []
+    for i, (label, fn) in enumerate(STACK):
+        x = i * (tw + gap)
+        svg = (ASSETS / "stack" / f"{fn}.svg").read_text(encoding="utf-8")
+        svg = re.sub(r"^<\?xml[^>]*\?>\s*", "", svg)
+        inner = re.sub(r"<svg[^>]*>", "", svg, count=1).replace("</svg>", "")
+        out.append(
+            f'<g transform="translate({x:.1f} 0)"><rect width="{tw}" height="{th}" rx="14" fill="#ECE9E2" stroke="#CFCBC3"/>'
+            f'<svg x="12" y="12" width="40" height="40" viewBox="0 0 128 128">{inner}</svg>'
+            f'<text x="{tw / 2}" y="76" text-anchor="middle" font-family="{MONO}" font-size="10.5" font-weight="600" fill="#111111">{label}</text></g>')
+    names = ", ".join(l for l, _ in STACK)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {th}" width="{W}" height="{th}" role="img" '
+            f'aria-label="Stack: {names}">{"".join(out)}</svg>\n')
 
 
 def rel(days):
@@ -145,6 +209,7 @@ def main():
     for name, t in THEMES.items():
         (ASSETS / f"hero-{name}.svg").write_text(hero(t), encoding="utf-8")
         (ASSETS / f"status-{name}.svg").write_text(status(t, rows, today), encoding="utf-8")
+    (ASSETS / "stack.svg").write_text(stack(), encoding="utf-8")
     print("ok")
 
 
