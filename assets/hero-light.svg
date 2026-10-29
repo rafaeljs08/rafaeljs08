@@ -1,15 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 300" width="830" height="300" role="img" aria-label="Rafael Junqueira — dados brutos, decisões claras">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 300" width="830" height="300" role="img" aria-label="Olá, me chamo Rafael Junqueira. Dados brutos, decisões claras.">
 <style>
 .k{font:600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;letter-spacing:.14em;fill:#5F5E59}
 .h{font:400 52px/1 Georgia, 'Times New Roman', serif;fill:#111111;letter-spacing:-.02em}
 .a{font-style:italic;fill:#C2410C}
+.t{font:500 22px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;fill:#111111}
+@keyframes g0{0%,0.00%{opacity:1}0.00%,32.00%{opacity:1}32.01%,100%{opacity:0}}@keyframes m0{0.00%{transform:translateX(0);animation-timing-function:steps(30)}10.70%{transform:translateX(396.0px)}28.00%{transform:translateX(396.0px);animation-timing-function:steps(30)}32.00%,100%{transform:translateX(0)}}.g0{animation:g0 15s linear infinite;opacity:0}.m0{animation:m0 15s linear infinite}@keyframes g1{0%,33.32%{opacity:0}33.33%,65.33%{opacity:1}65.34%,100%{opacity:0}}@keyframes m1{33.33%{transform:translateX(0);animation-timing-function:steps(35)}44.03%{transform:translateX(462.0px)}61.33%{transform:translateX(462.0px);animation-timing-function:steps(35)}65.33%,100%{transform:translateX(0)}}.g1{animation:g1 15s linear infinite;opacity:0}.m1{animation:m1 15s linear infinite}@keyframes g2{0%,66.66%{opacity:0}66.67%,98.67%{opacity:1}98.68%,100%{opacity:0}}@keyframes m2{66.67%{transform:translateX(0);animation-timing-function:steps(36)}77.37%{transform:translateX(475.2px)}94.67%{transform:translateX(475.2px);animation-timing-function:steps(36)}98.67%,100%{transform:translateX(0)}}.g2{animation:g2 15s linear infinite;opacity:0}.m2{animation:m2 15s linear infinite}.cr{animation:b 1s steps(1) infinite}@keyframes b{50%{opacity:0}}@media (prefers-reduced-motion:reduce){.g0{animation:none;opacity:1}.g1,.g2{display:none}.m0{animation:none;transform:translateX(396.0px)}.cr{display:none}}
 .d{fill:#111111;opacity:.85;animation:p 3.6s ease-in-out infinite}
 @keyframes p{0%,100%{opacity:.25}50%{opacity:.9}}
 @media (prefers-reduced-motion:reduce){.d{animation:none;opacity:.7}}
 </style>
 <rect width="830" height="300" rx="20" fill="#F4F2EE"/>
 <rect x="0.5" y="0.5" width="829" height="299" rx="19.5" fill="none" stroke="#CFCBC3"/>
-<text class="k" x="36" y="52">RAFAEL JUNQUEIRA · SISTEMAS DE INFORMAÇÃO</text>
+<g class="g0"><text class="t" x="36" y="52" textLength="396.0" lengthAdjust="spacing">Olá, me chamo Rafael Junqueira</text><g class="m0"><rect x="36" y="28" width="420.0" height="32" fill="#F4F2EE"/><rect class="cr" x="36" y="32" width="2.5" height="24" fill="#C2410C"/></g></g><g class="g1"><text class="t" x="36" y="52" textLength="462.0" lengthAdjust="spacing">Estudante de Sistemas de Informação</text><g class="m1"><rect x="36" y="28" width="486.0" height="32" fill="#F4F2EE"/><rect class="cr" x="36" y="32" width="2.5" height="24" fill="#C2410C"/></g></g><g class="g2"><text class="t" x="36" y="52" textLength="475.2" lengthAdjust="spacing">Dev full stack · Dados · IA aplicada</text><g class="m2"><rect x="36" y="28" width="499.2" height="32" fill="#F4F2EE"/><rect class="cr" x="36" y="32" width="2.5" height="24" fill="#C2410C"/></g></g>
 <text class="h" x="36" y="132">Dados brutos,</text>
 <text class="h a" x="36" y="192">decisões claras.</text>
 <rect x="36" y="228" width="44" height="3" fill="#C2410C"/>

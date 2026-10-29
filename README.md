@@ -1,7 +1,7 @@
 <h1 align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-    <img src="assets/hero-light.svg" alt="Rafael Junqueira — dados brutos, decisões claras" width="830">
+    <img src="assets/hero-light.svg" alt="Olá, me chamo Rafael Junqueira. Dados brutos, decisões claras." width="830">
   </picture>
 </h1>
 
@@ -44,11 +44,9 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 
 ## Stack
 
-- **Linguagens:** Python, PHP, JavaScript, Java (básico)
-- **Dados:** Pandas, Matplotlib, Streamlit, SQL avançado (procedures e functions)
-- **Web e APIs:** Django, Spring Boot, HTML/CSS, APIs REST
-- **IA e automação:** LangChain, RAG, n8n, Copilot Studio
-- **Bancos e ferramentas:** MySQL, SQLite, Git, GitHub
+<img src="assets/stack.svg" alt="Stack: Python, PHP, JavaScript, Java, MySQL, Django, Pandas, Streamlit, n8n, Git, GitHub" width="830">
+
+Também: LangChain e RAG, Copilot Studio, SQL avançado (procedures e functions), APIs REST, HTML/CSS, SQLite, Matplotlib.
 
 ## Formação e cursos
 
@@ -62,4 +60,4 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 
 [LinkedIn](https://www.linkedin.com/in/rafael-junqueira-0228b52b3/) · [E-mail](mailto:Rafaeljs08@hotmail.com) · [Instagram @rafaelljunqueira](https://instagram.com/rafaelljunqueira) · Itajubá, MG
 
-<sub>O painel de atividade é gerado semanalmente por um workflow do próprio repositório (`scripts/build.py`).</sub>
+<sub>Ícones da stack: [devicon](https://devicon.dev) (MIT). O painel de atividade é gerado semanalmente por um workflow do próprio repositório (`scripts/build.py`).</sub>
