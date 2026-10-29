@@ -14,10 +14,16 @@ Notas salvas a pedido de Rafael para reaproveitar em redesigns, portfólio ou cu
 
 ## Repositórios e discrepâncias a revisar
 - `escalacao-brasileirao` é em dupla (com Vitor Faria de Oliveira e Silva).
-- `crypto-tech`: o README cita Streamlit, mas o comando de execução é `python crypto_analise.py`. Confirmar.
+- `crypto-tech`: o currículo confirma Streamlit, mas o README do repositório ainda manda rodar `python crypto_analise.py`; vale alinhar.
 - `api-rest-spring-boot`: README ainda com pacote genérico (`com.seu_pacote`).
 - `escalacao-brasileirao`: README expõe o acesso padrão `admin`/`admin` e links do Cursor; revisar antes de usar como vitrine.
 - Há também um repositório `portfolio` (só um README e uma pasta `formulario`) e `proj_DJANGO` (privado).
 
+## Currículo (recebido em 29/10/2026)
+- Rafael Junqueira de Souza. Estagiário de Desenvolvimento Full Stack na Support Informática desde 03/2026 (sistemas web de gestão hospitalar e clínica; PHP, JavaScript, MySQL, APIs REST, procedures, relatórios/BI).
+- Habilidades: PHP, Python, JavaScript, Java (básico); MySQL; APIs REST, HTML, CSS; LangChain, n8n, Streamlit, ChatGPT, Copilot Studio; Git, GitHub.
+- Formação: Sistemas de Informação, FEPI, 2024–2027. Inglês intermediário. Cursos na Alura (RAG/LangChain, n8n, Copilot Studio, IA, Python, marketing).
+- **Telefone e nomes de clientes do estágio não vão para o perfil público.**
+
 ## Pendências
-- **Currículo ainda não recebido.** Quando vier, atualizar "Formação" e adicionar experiências/cursos no README.
+- O currículo diz "5º período"; o README diz 6º (alteração feita por Rafael em a47a028). Confirmar qual vale.
