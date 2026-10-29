@@ -1,79 +1,48 @@
-# 🧠 Rafael Junqueira  
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+    <img src="assets/hero-light.svg" alt="Rafael Junqueira — dados brutos, decisões claras" width="830">
+  </picture>
+</h1>
 
+**Estudante do 6º período de Sistemas de Informação na FEPI (Itajubá/MG), com foco em Python, análise de dados e IA aplicada.** Construo ferramentas que transformam dados em informação que alguém consegue usar.
 
+[LinkedIn](https://www.linkedin.com/in/rafael-junqueira-0228b52b3/) · [E-mail](mailto:Rafaeljs08@hotmail.com) · [Instagram](https://instagram.com/rafaelljunqueira) · [Projetos](#projetos-selecionados)
 
-## 👨🏻‍💻 Sobre mim
+## Agora
 
-Sou estudante do **6º período de Sistemas de Informação** no  
-**Centro Universitário de Itajubá (FEPI)**.
+- **Aprofundando:** Machine Learning, LangChain e arquiteturas RAG
+- **Praticando:** análise de dados com Pandas e dashboards com Streamlit
+- **Cursando:** Sistemas de Informação, 6º período, FEPI
 
-Tenho foco em **Python, Inteligência Artificial e análise de dados**,  
-buscando desenvolver soluções inteligentes com aplicação prática no mercado.
+## Projetos selecionados
 
-Atualmente aprofundando conhecimentos em:
+| Projeto | Problema → solução | Stack |
+|---|---|---|
+| [analisador-vendas-marketing](https://github.com/rafaeljs08/analisador-vendas-marketing) | Pequenos varejos têm vendas em planilha, mas sem BI. Envia-se um CSV e recebe-se KPIs, ranking de produtos e sugestões de marketing | Python · Pandas |
+| [crypto-tech](https://github.com/rafaeljs08/crypto-tech) | Acompanhar e comparar criptomoedas sem chave de API, em USD ou BRL, com histórico de até 365 dias | Python · Pandas · Matplotlib · CoinGecko |
+| [escalacao-brasileirao](https://github.com/rafaeljs08/escalacao-brasileirao) | Montar um time com jogadores de qualquer clube da Série A em um campo interativo, com CRUD completo e validação por formação | Django · SQLite |
+| [cartao-identidade-academica](https://github.com/rafaeljs08/cartao-identidade-academica) | Cartão digital de aluno (nome, curso e bio) com galeria e painel administrativo | Django · SQLite |
+| [api-rest-spring-boot](https://github.com/rafaeljs08/api-rest-spring-boot) | API REST acadêmica com persistência relacional | Java · Spring Boot · MySQL |
 
-- 🤖 Machine Learning  
-- 🔗 LangChain & Arquiteturas RAG  
-- 📊 Análise e Visualização de Dados  
-- 🌐 Integração com APIs  
-- 🚀 Desenvolvimento de aplicações com Streamlit  
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
+  <img src="assets/status-light.svg" alt="Atividade recente nos repositórios: escalacao-brasileirao e cartao-identidade há cerca de 1 mês; crypto-tech e analisador-vendas há 8 meses; api-rest-spring-boot há 11 meses" width="830">
+</picture>
 
-Acredito que tecnologia vai além do código — trata-se de  
-**criar sistemas capazes de aprender, analisar e gerar impacto real.**
+## Stack
 
----
+- **Linguagens:** Python, Java
+- **Dados:** Pandas, Matplotlib, Streamlit
+- **Web e APIs:** Django, Spring Boot, HTML/CSS, consumo de APIs REST
+- **Bancos e ferramentas:** SQLite, MySQL, Git, GitHub
 
-## 🌐 Conecte-se comigo
+## Formação
 
-<p align="center">
-  <a href="https://github.com/rafaeljs08">
-    <img src="https://img.shields.io/badge/GitHub-0f172a?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-  <a href="https://www.linkedin.com/in/rafael-junqueira-0228b52b3/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://instagram.com/rafaelljunqueira">
-    <img src="https://img.shields.io/badge/Instagram-1a1b27?style=for-the-badge&logo=instagram&logoColor=E4405F"/>
-  </a>
-</p>
+**Sistemas de Informação** · Centro Universitário de Itajubá (FEPI) · 6º período
 
----
+## Contato
 
-## 🤖 Stack Tecnológica
+[LinkedIn](https://www.linkedin.com/in/rafael-junqueira-0228b52b3/) · [E-mail](mailto:Rafaeljs08@hotmail.com) · [Instagram @rafaelljunqueira](https://instagram.com/rafaelljunqueira) · Itajubá, MG
 
-<p align="center">
-
-  <!-- Linguagem Principal -->
-  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-
-  <!-- Dados -->
-  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" />
-  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" />
-  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" />
-
-  <!-- Web / Apps -->
-  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" />
-
-  <!-- Versionamento -->
-  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-
-  <!-- Banco de Dados -->
-  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-
-  <!-- API -->
-  <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" />
-
-</p>
-
----
-
-## 🧠 Filosofia
-
-> "Dados são o novo petróleo, mas inteligência é a refinaria."
-
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:00C896&height=120&section=footer"/>
-</p>
+<sub>O painel de atividade é gerado semanalmente por um workflow do próprio repositório (`scripts/build.py`).</sub>
