@@ -26,4 +26,4 @@ Notas salvas a pedido de Rafael para reaproveitar em redesigns, portfólio ou cu
 - **Telefone e nomes de clientes do estágio não vão para o perfil público.**
 
 ## Pendências
-- O currículo diz "5º período"; o README diz 6º (alteração feita por Rafael em a47a028). Confirmar qual vale.
+- Período confirmado por Rafael em 29/10/2026: **6º**. O currículo em PDF ainda diz 5º e precisa ser atualizado por ele.

@@ -5,7 +5,7 @@
   </picture>
 </h1>
 
-**Estudante de Sistemas de Informação na FEPI (Itajubá/MG) e estagiário de desenvolvimento full stack.** Trabalho com software, automação, dados e IA aplicada: construo sistemas e fluxos que transformam dados em informação que alguém consegue usar.
+**Estudante do 6º período de Sistemas de Informação na FEPI (Itajubá/MG) e estagiário de desenvolvimento full stack.** Trabalho com software, automação, dados e IA aplicada: construo sistemas e fluxos que transformam dados em informação que alguém consegue usar.
 
 [LinkedIn](https://www.linkedin.com/in/rafael-junqueira-0228b52b3/) · [E-mail](mailto:Rafaeljs08@hotmail.com) · [Instagram](https://instagram.com/rafaelljunqueira) · [Projetos](#projetos-selecionados)
 
@@ -13,7 +13,7 @@
 
 - **Estagiando** como desenvolvedor full stack na Support Informática, em sistemas web para a área da saúde
 - **Aprofundando:** LangChain, arquiteturas RAG e automação de fluxos com n8n
-- **Cursando:** Sistemas de Informação na FEPI
+- **Cursando:** Sistemas de Informação, 6º período, na FEPI
 
 ## Experiência
 
@@ -52,7 +52,7 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 
 ## Formação e cursos
 
-**Sistemas de Informação** · Centro Universitário de Itajubá (FEPI) · 2024 – 2027
+**Sistemas de Informação** · Centro Universitário de Itajubá (FEPI) · 2024 – 2027 · 6º período
 
 **Cursos (Alura):** Arquiteturas RAG com LLMs, embeddings, busca semântica e agentes com LangChain · Automação de fluxos integrando n8n e IA · Copilot Studio: soluções multiagentes · Fundamentos de IA · Python e Inteligência Artificial aplicada · Análise de dados · Pensamento computacional
 
