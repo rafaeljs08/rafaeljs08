@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 276" width="830" height="276" role="img" aria-label="Sobre mim: software, dados e IA com aplicação prática. Foco em dados, IA e backend; estágio full stack desde 03/2026; Sistemas de Informação na FEPI, 6º período.">
+<style>
+.k{font:600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;letter-spacing:.14em;fill:#5F5E59}
+.t{font:400 34px Georgia, 'Times New Roman', serif;fill:#111111;letter-spacing:-.015em}
+.a{font-style:italic;fill:#C2410C}
+.b{font:400 15.5px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;fill:#111111}
+.f{font:400 21px Georgia, 'Times New Roman', serif;fill:#111111}
+</style>
+<rect width="830" height="276" rx="20" fill="#F4F2EE"/>
+<rect x="0.5" y="0.5" width="829" height="275" rx="19.5" fill="none" stroke="#CFCBC3"/>
+<text class="k" x="36" y="46">SOBRE MIM</text>
+<text class="t" x="36" y="92">Software, dados e IA</text>
+<text class="t a" x="36" y="132">com aplicação prática.</text>
+<text class="b" x="36" y="176">Estudante do 6º período de Sistemas de Informação</text><text class="b" x="36" y="201">na FEPI e estagiário full stack em sistemas de</text><text class="b" x="36" y="226">saúde. Uno engenharia de software, dados e IA para</text><text class="b" x="36" y="251">automatizar processos e gerar informação útil.</text>
+<line x1="516" y1="40" x2="516" y2="236" stroke="#CFCBC3"/>
+<text class="k" x="552" y="62">FOCO</text><text class="f" x="552" y="92">Dados · IA · Backend</text><line x1="552" y1="108" x2="794" y2="108" stroke="#CFCBC3"/><text class="k" x="552" y="132">ESTÁGIO</text><text class="f" x="552" y="162">Full stack · 03/2026</text><line x1="552" y1="178" x2="794" y2="178" stroke="#CFCBC3"/><text class="k" x="552" y="202">FORMAÇÃO</text><text class="f" x="552" y="232">SI · FEPI · 6º período</text>
+</svg>

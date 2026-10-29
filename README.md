@@ -5,9 +5,12 @@
   </picture>
 </h1>
 
-**Estudante do 6º período de Sistemas de Informação na FEPI (Itajubá/MG) e estagiário de desenvolvimento full stack.** Trabalho com software, automação, dados e IA aplicada: construo sistemas e fluxos que transformam dados em informação que alguém consegue usar.
+## Sobre
 
-[LinkedIn](https://www.linkedin.com/in/rafael-junqueira-0228b52b3/) · [E-mail](mailto:Rafaeljs08@hotmail.com) · [Instagram](https://instagram.com/rafaelljunqueira) · [Projetos](#projetos-selecionados)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg">
+  <img src="assets/about-light.svg" alt="Sobre mim: software, dados e IA com aplicação prática. Estudante do 6º período de Sistemas de Informação na FEPI e estagiário full stack em sistemas de saúde." width="830">
+</picture>
 
 ## Agora
 
@@ -58,6 +61,12 @@ Também: LangChain e RAG, Copilot Studio, SQL avançado (procedures e functions)
 
 ## Contato
 
-[LinkedIn](https://www.linkedin.com/in/rafael-junqueira-0228b52b3/) · [E-mail](mailto:Rafaeljs08@hotmail.com) · [Instagram @rafaelljunqueira](https://instagram.com/rafaelljunqueira) · Itajubá, MG
+<p>
+<a href="https://www.linkedin.com/in/rafael-junqueira-0228b52b3/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact-linkedin-dark.svg"><img src="assets/contact-linkedin-light.svg" alt="LinkedIn: rafael-junqueira" width="258"></picture></a>
+<a href="mailto:Rafaeljs08@hotmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact-email-dark.svg"><img src="assets/contact-email-light.svg" alt="E-mail: Rafaeljs08@hotmail.com" width="308"></picture></a>
+<a href="https://instagram.com/rafaelljunqueira"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact-instagram-dark.svg"><img src="assets/contact-instagram-light.svg" alt="Instagram: @rafaelljunqueira" width="258"></picture></a>
+</p>
+
+Itajubá, MG
 
 <sub>Ícones da stack: [devicon](https://devicon.dev) (MIT). O painel de atividade é gerado semanalmente por um workflow do próprio repositório (`scripts/build.py`).</sub>
