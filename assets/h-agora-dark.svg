@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 56" width="830" height="56" role="img" aria-label="Agora">
+<style>
+.ac{color:#60A5FA;animation:cor 9s ease-in-out infinite}@keyframes cor{0%,100%{color:#60A5FA}50%{color:#34D399}}.ac2{color:#34D399;animation:cor 9s ease-in-out -4.5s infinite}@media (prefers-reduced-motion:reduce){.ac,.ac2{animation:none}}@media (prefers-reduced-motion:reduce){.ac2{color:#34D399}}
+.k{font:600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;letter-spacing:.14em;fill:currentColor}
+.t{font:400 30px Georgia, 'Times New Roman', serif;letter-spacing:-.015em;fill:currentColor}
+</style>
+<text class="k ac2" x="2" y="36">02</text>
+<text class="t ac" x="40" y="40">Agora</text>
+<line x1="0" y1="52" x2="830" y2="52" stroke="#2C2C2E"/>
+</svg>

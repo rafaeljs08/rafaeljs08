@@ -20,6 +20,8 @@ Texto secundário e os dois tons do acento têm contraste ≥ 4.5:1 sobre o fund
 
 **Acento animado:** a cor de destaque alterna só entre o azul e o verde, em ciclo suave de 9 s (azul → verde → azul), em todos os SVGs (`.ac` e `.ac2`, em `scripts/build.py`). As duas classes ficam defasadas em meio ciclo: quando um elemento está azul, o vizinho está verde. Valem para títulos, letreiro, rótulos, nomes na atividade, valores do "Sobre", botões de contato, bordas dos cartões, moldura do avatar e a grade de pontos. O parágrafo do "Sobre" e os textos secundários ficam neutros, para leitura. Com movimento reduzido ficam fixos (`.ac` azul, `.ac2` verde).
 
+**Títulos das seções:** viram imagens geradas por `scripts/build.py` (`assets/h-*.svg`), com número (`.ac2`) e nome (`.ac`), dentro de um `<h2>` com `alt`. **Cache:** o build grava em cada imagem do README um `?v=<hash>`, para o GitHub redesenhar quando o arquivo muda.
+
 ## Tipografia
 Títulos: Georgia (serifa, itálico no acento). Detalhes: monoespaçada do sistema. Sem fontes externas.
 

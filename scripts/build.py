@@ -7,6 +7,7 @@ GitHub; se a API falhar, usa o cache em data/activity.json e segue em frente.
 Uso:  python scripts/build.py [--offline]
 """
 import base64
+import re
 import datetime as dt
 import json
 import os
@@ -218,6 +219,41 @@ def about(t):
 """
 
 
+HEADINGS = [("sobre", "01", "Sobre"), ("agora", "02", "Agora"), ("experiencia", "03", "Experiência"),
+            ("projetos", "04", "Projetos selecionados"), ("stack", "05", "Stack"),
+            ("formacao", "06", "Formação e cursos"), ("contato", "07", "Contato")]
+
+
+def heading(t, num, title):
+    h = 56
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-label="{esc(title)}">
+<style>
+{accent_css(t)}
+.k{{font:600 12px {MONO};letter-spacing:.14em;fill:currentColor}}
+.t{{font:400 30px {SERIF};letter-spacing:-.015em;fill:currentColor}}
+</style>
+<text class="k ac2" x="2" y="36">{num}</text>
+<text class="t ac" x="40" y="40">{esc(title)}</text>
+<line x1="0" y1="52" x2="{W}" y2="52" stroke="{t['rule']}"/>
+</svg>
+"""
+
+
+def stamp_readme():
+    """Põe em cada imagem do README um ?v=<hash do arquivo>: o GitHub só renderiza de novo quando o conteúdo muda."""
+    import hashlib
+    readme = ROOT / "README.md"
+    txt = readme.read_text(encoding="utf-8")
+
+    def troca(m):
+        f = ROOT / m.group(1)
+        v = hashlib.sha1(f.read_bytes()).hexdigest()[:8] if f.exists() else "0"
+        return f"{m.group(1)}?v={v}"
+    novo = re.sub(r"(assets/[\w\-./]+\.svg)(?:\?v=\w+)?", troca, txt)
+    if novo != txt:
+        readme.write_text(novo, encoding="utf-8")
+
+
 def rel(days):
     if days <= 0:
         return "hoje"
@@ -295,9 +331,12 @@ def main():
         (ASSETS / f"hero-{name}.svg").write_text(hero(t), encoding="utf-8")
         (ASSETS / f"status-{name}.svg").write_text(status(t, rows, today), encoding="utf-8")
         (ASSETS / f"about-{name}.svg").write_text(about(t), encoding="utf-8")
+        for slug, num, title in HEADINGS:
+            (ASSETS / f"h-{slug}-{name}.svg").write_text(heading(t, num, title), encoding="utf-8")
         for key, label, text, w in CONTACTS:
             (ASSETS / f"contact-{key}-{name}.svg").write_text(contact(t, key, label, text, w), encoding="utf-8")
     (ASSETS / "stack.svg").write_text(stack(), encoding="utf-8")
+    stamp_readme()
     print("ok")
 
 
