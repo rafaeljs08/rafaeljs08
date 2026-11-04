@@ -15,6 +15,7 @@
 ## Agora
 
 - **Estagiando** como desenvolvedor full stack na Support Informática, em sistemas web para a área da saúde
+- **Contribuindo** no [ProLobby](https://github.com/rafaeljs08/ProLobby.com), plataforma de matchmaking competitivo e identidade verificada para EA FC Pro Clubs, desenvolvida em equipe
 - **Aprofundando:** LangChain, arquiteturas RAG e automação de fluxos com n8n
 - **Cursando:** Sistemas de Informação, 6º período, na FEPI
 
@@ -34,7 +35,9 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 
 | Projeto | Problema → solução | Stack |
 |---|---|---|
-| [analisador-vendas-marketing](https://github.com/rafaeljs08/analisador-vendas-marketing) | Pequenos varejos têm vendas em planilha, mas sem BI. Envia-se um CSV e recebe-se KPIs, ranking de produtos e sugestões de marketing | Python · Pandas · Streamlit · IA |
+| [ProLobby](https://github.com/rafaeljs08/ProLobby.com) | Matchmaking para jogadores solo de EA FC Pro Clubs: personagem verificado por print, fila por posição e partidas equilibradas por elo, coordenadas pelo Discord. Projeto em equipe, em desenvolvimento | Next.js · NestJS · PostgreSQL |
+| [Game_Vault](https://github.com/rafaeljs08/Game_Vault) | Plataforma Django para gerenciar coleção de jogos: catálogo global (administrador) e biblioteca pessoal com wishlist, avaliações e estatísticas. Projeto em dupla | Django · SQLite |
+| [analisador-vendas-marketing](https://github.com/rafaeljs08/analisador-vendas-marketing) | Pequenos varejos têm vendas em planilha, mas sem BI. Envia-se um CSV e recebe-se KPIs, ranking de produtos e sugestões de marketing | Python · Streamlit · Pandas |
 | [crypto-tech](https://github.com/rafaeljs08/crypto-tech) | Acompanhar e comparar criptomoedas em tempo real, em USD ou BRL, com histórico de até 365 dias | Python · Streamlit · Pandas · Matplotlib · CoinGecko |
 | [escalacao-brasileirao](https://github.com/rafaeljs08/escalacao-brasileirao) | Montar um time com jogadores de qualquer clube da Série A em um campo interativo, com CRUD completo e validação por formação | Django · SQLite |
 | [cartao-identidade-academica](https://github.com/rafaeljs08/cartao-identidade-academica) | Cartão digital de aluno (nome, curso e bio) com galeria e painel administrativo | Django · SQLite |
@@ -42,7 +45,7 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
-  <img src="assets/status-light.svg" alt="Atividade recente nos repositórios: escalacao-brasileirao e cartao-identidade há cerca de 1 mês; crypto-tech e analisador-vendas há 8 meses; api-rest-spring-boot há 11 meses" width="830">
+  <img src="assets/status-light.svg" alt="Atividade recente nos repositórios, com a data do último commit de cada projeto" width="830">
 </picture>
 
 ## Stack
