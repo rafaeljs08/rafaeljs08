@@ -1,7 +1,7 @@
 # Design brief — perfil rafaeljs08
 
 **Objetivo:** estágio/emprego em dados e IA. Público: recrutadores e professores.
-**Direção:** editorial monocromático (escolhida por Rafael).
+**Direção:** editorial monocromático (escolhida por Rafael), com acento que alterna entre azul e verde (também escolha dele).
 
 **Conceito:** *dados brutos → decisões claras*. Uma grade de pontos que diminui até virar o retrato (o avatar ilustrado). A ideia nasce do próprio perfil: dados que viram algo legível.
 
@@ -13,9 +13,12 @@
 | Texto | `#111111` | `#EDEBE6` |
 | Texto secundário | `#5F5E59` | `#A09E97` |
 | Linhas | `#CFCBC3` | `#2C2C2E` |
-| Acento (único) | `#C2410C` | `#FF8A57` |
+| Acento: azul | `#1D4ED8` | `#60A5FA` |
+| Acento: verde | `#047857` | `#34D399` |
 
-Texto secundário e acento têm contraste ≥ 4.5:1 sobre o fundo de cada tema.
+Texto secundário e os dois tons do acento têm contraste ≥ 4.5:1 sobre o fundo de cada tema.
+
+**Acento animado:** a cor de destaque alterna só entre o azul e o verde, em ciclo suave de 9 s (azul → verde → azul), em todos os SVGs (`.ac`, em `scripts/build.py`). Com movimento reduzido fica fixa no azul.
 
 ## Tipografia
 Títulos: Georgia (serifa, itálico no acento). Detalhes: monoespaçada do sistema. Sem fontes externas.

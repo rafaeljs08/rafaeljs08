@@ -20,12 +20,20 @@ W = 830  # largura útil do README no GitHub
 
 THEMES = {
     "light": dict(bg="#F4F2EE", ink="#111111", muted="#5F5E59", rule="#CFCBC3",
-                  accent="#C2410C", panel="#E9E6DF", dot="#111111"),
+                  accent="#1D4ED8", accent2="#047857", panel="#E9E6DF", dot="#111111"),
     "dark": dict(bg="#0E0E0F", ink="#EDEBE6", muted="#A09E97", rule="#2C2C2E",
-                 accent="#FF8A57", panel="#1A1A1C", dot="#EDEBE6"),
+                 accent="#60A5FA", accent2="#34D399", panel="#1A1A1C", dot="#EDEBE6"),
 }
 SERIF = "Georgia, 'Times New Roman', serif"
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+
+
+
+def accent_css(t):
+    """Cor de destaque que alterna entre azul e verde (só esses dois tons) e respeita movimento reduzido."""
+    return (f".ac{{color:{t['accent']};animation:cor 9s ease-in-out infinite}}"
+            f"@keyframes cor{{0%,100%{{color:{t['accent']}}}50%{{color:{t['accent2']}}}}}"
+            "@media (prefers-reduced-motion:reduce){.ac{animation:none}}")
 
 
 def esc(s):
@@ -58,7 +66,7 @@ def typing(t):
         body.append(
             f'<g class="g{k}"><text class="t" x="36" y="52" textLength="{full:.1f}" lengthAdjust="spacing">{esc(ph)}</text>'
             f'<g class="m{k}"><rect x="36" y="28" width="{full + 24:.1f}" height="32" fill="{t["bg"]}"/>'
-            f'<rect class="cr" x="36" y="32" width="2.5" height="24" fill="{t["accent"]}"/></g></g>')
+            f'<g class="ac"><rect class="cr" x="36" y="32" width="2.5" height="24" fill="currentColor"/></g></g></g>')
     css.append(".cr{animation:b 1s steps(1) infinite}@keyframes b{50%{opacity:0}}")
     css.append("@media (prefers-reduced-motion:reduce){.g0{animation:none;opacity:1}"
                ".g1,.g2{display:none}.m0{animation:none;transform:translateX(%.1fpx)}.cr{display:none}}"
@@ -85,9 +93,10 @@ def hero(t):
     tcss, tbody = typing(t)
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-label="Olá, me chamo Rafael Junqueira. Dados brutos, decisões claras.">
 <style>
+{accent_css(t)}
 .k{{font:600 12px {MONO};letter-spacing:.14em;fill:{t['muted']}}}
 .h{{font:400 52px/1 {SERIF};fill:{t['ink']};letter-spacing:-.02em}}
-.a{{font-style:italic;fill:{t['accent']}}}
+.a{{font-style:italic;fill:currentColor}}
 .t{{font:500 22px {MONO};fill:{t['ink']}}}
 {tcss}
 .d{{fill:{t['dot']};opacity:.85;animation:p 3.6s ease-in-out infinite}}
@@ -98,8 +107,8 @@ def hero(t):
 <rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="19.5" fill="none" stroke="{t['rule']}"/>
 {tbody}
 <text class="h" x="36" y="132">Dados brutos,</text>
-<text class="h a" x="36" y="192">decisões claras.</text>
-<rect x="36" y="228" width="44" height="3" fill="{t['accent']}"/>
+<text class="h a ac" x="36" y="192">decisões claras.</text>
+<rect class="ac" x="36" y="228" width="44" height="3" fill="currentColor"/>
 <text class="k" x="36" y="262">PYTHON · DADOS · IA APLICADA</text>
 {''.join(dots)}
 <defs><clipPath id="c"><rect x="{ax}" y="{ay}" width="{size}" height="{size}" rx="18"/></clipPath></defs>
@@ -154,16 +163,17 @@ def contact(t, key, label, text, w):
     h = 76
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{esc(label.title())}: {esc(text)}">
 <style>
+{accent_css(t)}
 .k{{font:600 11px {MONO};letter-spacing:.14em;fill:{t['muted']}}}
 .v{{font:600 13.5px {MONO};fill:{t['ink']}}}
-.ar{{font:400 20px {SANS};fill:{t['accent']}}}
+.ar{{font:400 20px {SANS};fill:currentColor}}
 </style>
 <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="18" fill="{t['bg']}" stroke="{t['rule']}"/>
 <circle cx="42" cy="38" r="21" fill="{t['panel']}"/>
-<g transform="translate(30 26)" fill="none" stroke="{t['accent']}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{ICONS[key]}</g>
+<g transform="translate(30 26)" class="ac" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{ICONS[key]}</g>
 <text class="k" x="76" y="33">{label}</text>
 <text class="v" x="76" y="53">{esc(text)}</text>
-<text class="ar" x="{w - 24}" y="44" text-anchor="end">↗</text>
+<text class="ar ac" x="{w - 24}" y="44" text-anchor="end">↗</text>
 </svg>
 """
 
@@ -186,9 +196,10 @@ def about(t):
             rows += f'<line x1="552" y1="{y + 46}" x2="{W - 36}" y2="{y + 46}" stroke="{t["rule"]}"/>'
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-label="Sobre mim: software, dados e IA com aplicação prática. Foco em dados, IA e backend; estágio full stack desde 03/2026; Sistemas de Informação na FEPI, 6º período.">
 <style>
+{accent_css(t)}
 .k{{font:600 12px {MONO};letter-spacing:.14em;fill:{t['muted']}}}
 .t{{font:400 34px {SERIF};fill:{t['ink']};letter-spacing:-.015em}}
-.a{{font-style:italic;fill:{t['accent']}}}
+.a{{font-style:italic;fill:currentColor}}
 .b{{font:400 15.5px {SANS};fill:{t['ink']}}}
 .f{{font:400 21px {SERIF};fill:{t['ink']}}}
 </style>
@@ -196,7 +207,7 @@ def about(t):
 <rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="19.5" fill="none" stroke="{t['rule']}"/>
 <text class="k" x="36" y="46">SOBRE MIM</text>
 <text class="t" x="36" y="92">Software, dados e IA</text>
-<text class="t a" x="36" y="132">com aplicação prática.</text>
+<text class="t a ac" x="36" y="132">com aplicação prática.</text>
 {lines}
 <line x1="516" y1="40" x2="516" y2="{h - 40}" stroke="{t['rule']}"/>
 {rows}
@@ -225,10 +236,11 @@ def status(t, rows, today):
         out.append(f"""<text class="n" x="36" y="{y}">{esc(label)}</text>
 <text class="s" x="36" y="{y + 18}">{esc(stack)}</text>
 <rect x="400" y="{y - 10}" width="280" height="6" rx="3" fill="{t['rule']}"/>
-<rect x="400" y="{y - 10}" width="{280 * fill:.0f}" height="6" rx="3" fill="{t['accent']}"/>
+<rect x="400" y="{y - 10}" width="{280 * fill:.0f}" height="6" rx="3" class="ac" fill="currentColor"/>
 <text class="s" x="{W - 36}" y="{y}" text-anchor="end">{rel(days)}</text>""")
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-label="Atividade recente nos repositórios, atualizada em {today:%d/%m/%Y}">
 <style>
+{accent_css(t)}
 .k{{font:600 12px {MONO};letter-spacing:.14em;fill:{t['muted']}}}
 .n{{font:600 17px {MONO};fill:{t['ink']}}}
 .s{{font:400 14px {MONO};fill:{t['muted']}}}
