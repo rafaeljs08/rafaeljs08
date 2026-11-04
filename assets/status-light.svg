@@ -1,40 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 422" width="830" height="422" role="img" aria-label="Atividade recente nos repositórios, atualizada em 04/11/2026">
 <style>
-.ac{color:#1D4ED8;animation:cor 9s ease-in-out infinite}@keyframes cor{0%,100%{color:#1D4ED8}50%{color:#047857}}@media (prefers-reduced-motion:reduce){.ac{animation:none}}
-.k{font:600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;letter-spacing:.14em;fill:#5F5E59}
-.n{font:600 17px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;fill:#111111}
+.ac{color:#1D4ED8;animation:cor 9s ease-in-out infinite}@keyframes cor{0%,100%{color:#1D4ED8}50%{color:#047857}}.ac2{color:#047857;animation:cor 9s ease-in-out -4.5s infinite}@media (prefers-reduced-motion:reduce){.ac,.ac2{animation:none}}@media (prefers-reduced-motion:reduce){.ac2{color:#047857}}
+.k{font:600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;letter-spacing:.14em;fill:currentColor}
+.n{font:600 17px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;fill:currentColor}
 .s{font:400 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;fill:#5F5E59}
 </style>
 <rect width="830" height="422" rx="20" fill="#F4F2EE"/>
-<rect x="0.5" y="0.5" width="829" height="421" rx="19.5" fill="none" stroke="#CFCBC3"/>
-<text class="k" x="36" y="40">ATIVIDADE RECENTE</text>
-<text class="k" x="794" y="40" text-anchor="end">ATUALIZADO EM 04/11/2026</text>
+<rect x="0.5" y="0.5" width="829" height="421" rx="19.5" fill="none" class="ac" stroke="currentColor" stroke-opacity=".5"/>
+<text class="k ac2" x="36" y="40">ATIVIDADE RECENTE</text>
+<text class="k ac2" x="794" y="40" text-anchor="end">ATUALIZADO EM 04/11/2026</text>
 <line x1="36" y1="54" x2="794" y2="54" stroke="#CFCBC3"/>
-<text class="n" x="36" y="78">prolobby</text>
+<text class="n ac" x="36" y="78">prolobby</text>
 <text class="s" x="36" y="96">Next.js · NestJS · Postgres</text>
 <rect x="400" y="68" width="280" height="6" rx="3" fill="#CFCBC3"/>
 <rect x="400" y="68" width="279" height="6" rx="3" class="ac" fill="currentColor"/>
-<text class="s" x="794" y="78" text-anchor="end">há 1 d</text><text class="n" x="36" y="124">game-vault</text>
+<text class="s" x="794" y="78" text-anchor="end">há 1 d</text><text class="n ac" x="36" y="124">game-vault</text>
 <text class="s" x="36" y="142">Django · SQLite</text>
 <rect x="400" y="114" width="280" height="6" rx="3" fill="#CFCBC3"/>
 <rect x="400" y="114" width="279" height="6" rx="3" class="ac" fill="currentColor"/>
-<text class="s" x="794" y="124" text-anchor="end">há 1 d</text><text class="n" x="36" y="170">escalacao-brasileirao</text>
+<text class="s" x="794" y="124" text-anchor="end">há 1 d</text><text class="n ac" x="36" y="170">escalacao-brasileirao</text>
 <text class="s" x="36" y="188">Django · SQLite</text>
 <rect x="400" y="160" width="280" height="6" rx="3" fill="#CFCBC3"/>
 <rect x="400" y="160" width="232" height="6" rx="3" class="ac" fill="currentColor"/>
-<text class="s" x="794" y="170" text-anchor="end">há 2 meses</text><text class="n" x="36" y="216">cartao-identidade</text>
+<text class="s" x="794" y="170" text-anchor="end">há 2 meses</text><text class="n ac" x="36" y="216">cartao-identidade</text>
 <text class="s" x="36" y="234">Django · SQLite</text>
 <rect x="400" y="206" width="280" height="6" rx="3" fill="#CFCBC3"/>
 <rect x="400" y="206" width="232" height="6" rx="3" class="ac" fill="currentColor"/>
-<text class="s" x="794" y="216" text-anchor="end">há 2 meses</text><text class="n" x="36" y="262">crypto-tech</text>
+<text class="s" x="794" y="216" text-anchor="end">há 2 meses</text><text class="n ac" x="36" y="262">crypto-tech</text>
 <text class="s" x="36" y="280">Python · Streamlit · Pandas</text>
 <rect x="400" y="252" width="280" height="6" rx="3" fill="#CFCBC3"/>
 <rect x="400" y="252" width="88" height="6" rx="3" class="ac" fill="currentColor"/>
-<text class="s" x="794" y="262" text-anchor="end">há 8 meses</text><text class="n" x="36" y="308">analisador-vendas</text>
+<text class="s" x="794" y="262" text-anchor="end">há 8 meses</text><text class="n ac" x="36" y="308">analisador-vendas</text>
 <text class="s" x="36" y="326">Python · Streamlit · Pandas</text>
 <rect x="400" y="298" width="280" height="6" rx="3" fill="#CFCBC3"/>
 <rect x="400" y="298" width="77" height="6" rx="3" class="ac" fill="currentColor"/>
-<text class="s" x="794" y="308" text-anchor="end">há 8 meses</text><text class="n" x="36" y="354">api-rest-spring-boot</text>
+<text class="s" x="794" y="308" text-anchor="end">há 8 meses</text><text class="n ac" x="36" y="354">api-rest-spring-boot</text>
 <text class="s" x="36" y="372">Java · Spring · MySQL</text>
 <rect x="400" y="344" width="280" height="6" rx="3" fill="#CFCBC3"/>
 <rect x="400" y="344" width="17" height="6" rx="3" class="ac" fill="currentColor"/>
