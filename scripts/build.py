@@ -243,15 +243,18 @@ def status(t, rows, today):
 """
 
 
-def fetch_pushed(owner, repo):
+def fetch_pushed(owner, repo, branch=None):
+    """Data do último commit na branch (ou na padrão). Pushes em branches de trabalho não contam."""
+    url = f"https://api.github.com/repos/{owner}/{repo}/commits?per_page=1"
+    if branch:
+        url += f"&sha={branch}"
     req = urllib.request.Request(
-        f"https://api.github.com/repos/{owner}/{repo}",
-        headers={"Accept": "application/vnd.github+json", "User-Agent": "perfil-build"})
+        url, headers={"Accept": "application/vnd.github+json", "User-Agent": "perfil-build"})
     tok = os.environ.get("GITHUB_TOKEN")
     if tok:
         req.add_header("Authorization", f"Bearer {tok}")
     with urllib.request.urlopen(req, timeout=15) as r:
-        return json.load(r)["pushed_at"][:10]
+        return json.load(r)[0]["commit"]["committer"]["date"][:10]
 
 
 def main():
@@ -264,7 +267,7 @@ def main():
         if offline:
             break
         try:
-            cache[p["repo"]] = fetch_pushed(cfg["owner"], p["repo"])
+            cache[p["repo"]] = fetch_pushed(cfg["owner"], p["repo"], p.get("branch"))
         except Exception as e:  # falha segura: mantém o último valor conhecido
             print(f"aviso: {p['repo']}: {e}; usando cache", file=sys.stderr)
     rows = []

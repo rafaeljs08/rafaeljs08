@@ -14,9 +14,12 @@ Notas salvas a pedido de Rafael para reaproveitar em redesigns, portfólio ou cu
 
 ## Repositórios e discrepâncias a revisar
 - `escalacao-brasileirao` é em dupla (com Vitor Faria de Oliveira e Silva).
-- `crypto-tech`: o currículo confirma Streamlit, mas o README do repositório ainda manda rodar `python crypto_analise.py`; vale alinhar.
-- `api-rest-spring-boot`: README ainda com pacote genérico (`com.seu_pacote`).
-- `escalacao-brasileirao`: README expõe o acesso padrão `admin`/`admin` e links do Cursor; revisar antes de usar como vitrine.
+- READMEs de `crypto-tech`, `api-rest-spring-boot`, `analisador-vendas-marketing` e `escalacao-brasileirao` corrigidos em 04/11/2026 (branch `claude/corrige-readme` em cada um; ver PRs).
+- `api-rest-spring-boot` é a API `parcelamentos` (Java 21, Spring Boot 3.5.5, Flyway, MySQL); só o CRUD de clientes existe, `Parcelamento` é esqueleto.
+- `escalacao-brasileirao`: o código (`seed_brasileirao.py`) ainda cria `admin`/`admin` e redefine a senha a cada execução; o README agora avisa. Trocar o seed por variável de ambiente seria o ideal.
+- `analisador-vendas-marketing`: `src/ai_report.py` termina com `print("API KEY:", os.getenv("OPENAI_API_KEY"))`, que imprime a chave da OpenAI. Remover essa linha.
+- `Game_Vault`: Django em dupla (Vitor Faria de Oliveira e Silva e Rafael); README ainda aponta clone/CI para `VitorFos11/GameVault`.
+- `ProLobby.com` é um **espelho automático** (workflow `mirror-upstream`, a cada 30 min) de `ljborgess/ProLobby.com`: matchmaking competitivo e identidade verificada para EA FC Pro Clubs (Next.js, NestJS, PostgreSQL, discord.js), em desenvolvimento, em equipe. Rafael disse que **contribui** no projeto. O README do projeto diz "Projeto privado. Todos os direitos reservados aos sócios", e o espelho está público: confirmar com os sócios.
 - Há também um repositório `portfolio` (só um README e uma pasta `formulario`) e `proj_DJANGO` (privado).
 
 ## Currículo (recebido em 29/10/2026)
