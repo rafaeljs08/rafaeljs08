@@ -12,6 +12,8 @@
   <img src="assets/about-light.svg?v=bea14dee" alt="Sobre mim: software, dados e IA com aplicação prática. Estudante do 6º período de Sistemas de Informação na FEPI e estagiário full stack em sistemas de saúde." width="830">
 </picture>
 
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flow-dark.svg?v=87d1a7bd"><img src="assets/flow-light.svg?v=0634bb6b" alt="Pontos dispersos se organizam em barras: dado bruto vira decisão" width="830"></picture></p>
+
 <h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-agora-dark.svg?v=8a51851e"><img src="assets/h-agora-light.svg?v=9fead60c" alt="Agora" width="830"></picture></h2>
 
 - **Estagiando** como desenvolvedor full stack na Support Informática, em sistemas web para a área da saúde
@@ -32,6 +34,12 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 - Suporte técnico e troubleshooting em ambiente corporativo de saúde
 
 <h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-projetos-dark.svg?v=106c254b"><img src="assets/h-projetos-light.svg?v=fcab8d50" alt="Projetos selecionados" width="830"></picture></h2>
+
+<p>
+<a href="https://github.com/rafaeljs08/Game_Vault"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-game-vault-dark.svg?v=a571a678"><img src="assets/card-game-vault-light.svg?v=7ef21f18" alt="game-vault: dashboard da biblioteca de jogos (Django)" width="266"></picture></a>
+<a href="https://github.com/rafaeljs08/escalacao-brasileirao"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-escalacao-brasileirao-dark.svg?v=e0a442bf"><img src="assets/card-escalacao-brasileirao-light.svg?v=9f9a0866" alt="escalacao-brasileirao: campo interativo com a escalação (Django)" width="266"></picture></a>
+<a href="https://github.com/rafaeljs08/cartao-identidade-academica"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-cartao-identidade-dark.svg?v=f0a92208"><img src="assets/card-cartao-identidade-light.svg?v=bd50a277" alt="cartao-identidade: cartões digitais de alunos (Django)" width="266"></picture></a>
+</p>
 
 | Projeto | Problema → solução | Stack |
 |---|---|---|
