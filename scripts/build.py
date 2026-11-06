@@ -183,8 +183,8 @@ def about(t):
     import textwrap
     body = textwrap.wrap(
         "Estudante do 6º período de Sistemas de Informação na FEPI e estagiário "
-        "full stack em sistemas de saúde. Uno engenharia de software, dados e IA "
-        "para automatizar processos e gerar informação útil.", 50)
+        "full stack em sistemas de saúde. Combino engenharia de software, dados e IA "
+        "para automatizar processos e gerar informação útil.", 54)
     facts = [("FOCO", "Dados · IA · Backend"), ("ESTÁGIO", "Full stack · 03/2026"),
              ("FORMAÇÃO", "SI · FEPI · 6º período")]
     h = 276
