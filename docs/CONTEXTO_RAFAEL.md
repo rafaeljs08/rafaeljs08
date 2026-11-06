@@ -41,3 +41,4 @@ Comparativo em `docs/comparativo-imagens.png` (três opções no estilo "Sinal �
 
 ## Projetos retirados do perfil (06/11/2026)
 Rafael pediu para tirar do README do perfil, por agregarem pouco: `escalacao-brasileirao`, `cartao-identidade-academica`, `api-rest-spring-boot` e `Game_Vault`. Os repositórios continuam na conta dele. Projetos que seguem no perfil: ProLobby, `analisador-vendas-marketing` e `crypto-tech`.
+Stack do perfil ajustada em 06/11/2026: Rafael disse que o currículo lista só o que ele domina mais; por isso saíram o Django (ícone) e o SQLite (texto), que só apareciam nos projetos removidos. Critério daqui para frente: a stack segue o currículo e os projetos que ficam no perfil.
