@@ -30,3 +30,11 @@ Notas salvas a pedido de Rafael para reaproveitar em redesigns, portfólio ou cu
 
 ## Pendências
 - Período confirmado por Rafael em 29/10/2026: **6º**. O currículo em PDF ainda diz 5º e precisa ser atualizado por ele.
+
+## Ideias de imagem para o perfil (06/11/2026)
+Comparativo em `docs/comparativo-imagens.png` (três opções no estilo "Sinal Único"):
+- **A. Prancha de projetos:** telas reais em molduras discretas, acima da tabela de projetos. Evitar telas com arte de terceiros (capas de jogos do Game_Vault) e não usar telas do ProLobby (projeto privado). Comprimir cada tela para ~60 KB.
+- **B. Fluxo de dados:** pontos que se organizam em barras, com uma em destaque. Animação em SVG (não GIF), como separador entre "Sobre" e "Agora".
+- **C. Grafo de agentes/RAG:** nós quietos e um caminho em destaque (azul/verde). **Rafael gostou e quer fazer quando tiver um projeto de agentes de IA.** Só entra no perfil quando existir um projeto que a comprove.
+- **Descartado:** GIFs prontos do repositório Cool-GIFs-For-GitHub (estilo genérico, autoria e licença das GIFs não informadas, links que podem expirar, arquivos pesados).
+- **Skills:** `/taste`, `/findskill` e `/design-sync` não existem ou não se aplicam na sessão em nuvem. `find-skills` é uma skill instalada só no app local do Rafael.
