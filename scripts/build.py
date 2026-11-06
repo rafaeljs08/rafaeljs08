@@ -252,6 +252,78 @@ def stamp_readme():
         readme.write_text(novo, encoding="utf-8")
 
 
+CARDS = [  # arquivo em assets/telas, nome, stack, largura
+    ("game-vault", "game-vault", "Django · SQLite"),
+    ("escalacao-brasileirao", "escalacao-brasileirao", "Django · SQLite"),
+    ("cartao-identidade", "cartao-identidade", "Django · SQLite"),
+]
+
+
+def card(t, slug, name, stack):
+    """Cartão de projeto: tela real (já suavizada) em moldura calma. Cada um vira um link no README."""
+    w, h = 266, 236
+    img = base64.b64encode((ASSETS / "telas" / f"{slug}.jpg").read_bytes()).decode()
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{esc(name)}: {esc(stack)}">
+<style>
+.n{{font:600 14px {MONO};fill:{t['ink']}}}
+.s{{font:400 12px {MONO};fill:{t['muted']}}}
+.ar{{font:400 16px {SANS};fill:{t['muted']}}}
+</style>
+<defs><clipPath id="c"><rect x="8" y="8" width="250" height="156" rx="12"/></clipPath></defs>
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="18" fill="{t['bg']}" stroke="{t['rule']}"/>
+<image href="data:image/jpeg;base64,{img}" x="8" y="8" width="250" height="156" clip-path="url(#c)" preserveAspectRatio="xMidYMid slice"/>
+<rect x="8.5" y="8.5" width="249" height="155" rx="11.5" fill="none" stroke="{t['rule']}"/>
+<text class="n" x="18" y="196">{esc(name)}</text>
+<text class="s" x="18" y="217">{esc(stack)}</text>
+<text class="ar" x="{w - 20}" y="198" text-anchor="end">↗</text>
+</svg>
+"""
+
+
+def flow(t):
+    """Separador animado: dados dispersos se organizam e viram barras, uma delas em destaque."""
+    w, h = 830, 132
+    cols, rows, step = 26, 6, 20
+    x0, y0 = 36, 22
+    rng = [((i * 37 + 11) % 100) / 100 for i in range(cols * rows * 2)]
+    dots = []
+    for c in range(cols):
+        p = c / (cols - 1)
+        for r in range(rows):
+            k = (c * rows + r) * 2
+            jx = (rng[k] - .5) * 16 * (1 - p) ** 1.5
+            jy = (rng[k + 1] - .5) * 22 * (1 - p) ** 1.5
+            rad = 2.2 + (rng[k] * 2.6) * (1 - p) ** 1.5
+            cx, cy = x0 + c * step + jx, y0 + r * 16 + jy
+            dots.append(f'<circle class="d" style="animation-delay:{c * .09:.2f}s" cx="{cx:.1f}" cy="{cy:.1f}" r="{rad:.2f}"/>')
+    bars = ""
+    base = 108
+    for i, hh in enumerate([34, 58, 46, 72]):
+        x = 604 + i * 44
+        cls = 'bar ac' if i == 3 else 'bar'
+        fill = 'currentColor' if i == 3 else t['muted']
+        op = '' if i == 3 else ' fill-opacity=".5"'
+        bars += (f'<rect class="{cls}" style="animation-delay:{i * .25:.2f}s" x="{x}" y="{base - hh}" '
+                 f'width="26" height="{hh}" rx="4" fill="{fill}"{op}/>')
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="Pontos dispersos se organizam em barras: dado bruto vira decisão">
+<style>
+{accent_css(t)}
+.k{{font:600 11px {MONO};letter-spacing:.14em;fill:{t['muted']}}}
+.d{{fill:{t['ink']};opacity:.7;animation:onda 8s ease-in-out infinite}}
+.bar{{transform-box:fill-box;transform-origin:bottom;animation:cresce 8s ease-in-out infinite}}
+@keyframes onda{{0%,100%{{opacity:.22}}30%{{opacity:.85}}60%{{opacity:.22}}}}
+@keyframes cresce{{0%,25%{{transform:scaleY(.12)}}55%,85%{{transform:scaleY(1)}}100%{{transform:scaleY(.12)}}}}
+@media (prefers-reduced-motion:reduce){{.d{{animation:none;opacity:.6}}.bar{{animation:none}}}}
+</style>
+{''.join(dots)}
+{bars}
+<line x1="36" y1="{base + 1}" x2="{w - 36}" y2="{base + 1}" stroke="{t['rule']}"/>
+<text class="k" x="36" y="{h - 8}">DADO BRUTO</text>
+<text class="k" x="{w - 36}" y="{h - 8}" text-anchor="end">DECISÃO</text>
+</svg>
+"""
+
+
 def rel(days):
     if days <= 0:
         return "hoje"
@@ -329,6 +401,9 @@ def main():
         (ASSETS / f"hero-{name}.svg").write_text(hero(t), encoding="utf-8")
         (ASSETS / f"status-{name}.svg").write_text(status(t, rows, today), encoding="utf-8")
         (ASSETS / f"about-{name}.svg").write_text(about(t), encoding="utf-8")
+        (ASSETS / f"flow-{name}.svg").write_text(flow(t), encoding="utf-8")
+        for slug, fname, stk in CARDS:
+            (ASSETS / f"card-{slug}-{name}.svg").write_text(card(t, slug, fname, stk), encoding="utf-8")
         for slug, num, title in HEADINGS:
             (ASSETS / f"h-{slug}-{name}.svg").write_text(heading(t, num, title), encoding="utf-8")
         for key, label, text, w in CONTACTS:
