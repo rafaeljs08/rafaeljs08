@@ -18,9 +18,17 @@
 
 Texto secundário e os dois tons do acento têm contraste ≥ 4.5:1 sobre o fundo de cada tema.
 
-**Acento animado:** a cor de destaque alterna só entre o azul e o verde, em ciclo suave de 9 s (azul → verde → azul), em todos os SVGs (`.ac` e `.ac2`, em `scripts/build.py`). As duas classes ficam defasadas em meio ciclo: quando um elemento está azul, o vizinho está verde. Valem para títulos, letreiro, rótulos, nomes na atividade, valores do "Sobre", botões de contato, bordas dos cartões, moldura do avatar e a grade de pontos. O parágrafo do "Sobre" e os textos secundários ficam neutros, para leitura. Com movimento reduzido ficam fixos (`.ac` azul, `.ac2` verde).
+**Acento animado, com economia:** o único destaque alterna entre o azul e o verde em ciclo lento de 12 s (`.ac`, em `scripts/build.py`). Filosofia em `docs/DESIGN_PHILOSOPHY.md` ("Sinal Único") e prancha de referência em `docs/prancha-sinal-unico.png`: um acento só vale enquanto é escasso. Onde ele aparece:
 
-**Títulos das seções:** viram imagens geradas por `scripts/build.py` (`assets/h-*.svg`), com número (`.ac2`) e nome (`.ac`), dentro de um `<h2>` com `alt`. **Cache:** o build grava em cada imagem do README um `?v=<hash>`, para o GitHub redesenhar quando o arquivo muda.
+- "decisões claras." (hero) e "com aplicação prática." (Sobre), as duas frases-assinatura;
+- cursor e régua curta do hero;
+- ícone dos botões de contato;
+- traço curto sob cada título de seção;
+- barras dos projetos atualizados há até 45 dias (as demais ficam cinza).
+
+Todo o resto (textos, bordas, grade de pontos, moldura do avatar, tiles da stack) fica em tinta e cinza. Com movimento reduzido o acento fica fixo no azul.
+
+**Títulos das seções:** imagens geradas por `scripts/build.py` (`assets/h-*.svg`) dentro de um `<h2>` com `alt`. **Cache:** o build grava em cada imagem do README um `?v=<hash>`, para o GitHub redesenhar quando o arquivo muda.
 
 ## Tipografia
 Títulos: Georgia (serifa, itálico no acento). Detalhes: monoespaçada do sistema. Sem fontes externas.
