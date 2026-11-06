@@ -47,5 +47,4 @@ Hero → resumo e links → Agora → Projetos (problema → solução → stack
 
 ## Como reverter
 O layout anterior está no commit `a133224` (`git checkout a133224 -- README.md`).
-- **Prancha de projetos:** três cartões (`assets/card-*.svg`, gerados por `scripts/build.py` a partir de `assets/telas/*.jpg`) com telas reais, saturação reduzida a 72% para manter o tom calmo. Cada cartão é um link. Sem arte de terceiros e sem telas do ProLobby (projeto privado).
 - **Fluxo de dados:** separador animado (`assets/flow-*.svg`) entre "Sobre" e "Agora": pontos dispersos se organizam e viram barras, com uma em destaque (`.ac`). Respeita `prefers-reduced-motion`.

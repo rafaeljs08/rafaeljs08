@@ -8,11 +8,6 @@
       "branch": "dev"
     },
     {
-      "repo": "Game_Vault",
-      "label": "game-vault",
-      "stack": "Django · SQLite"
-    },
-    {
       "repo": "analisador-vendas-marketing",
       "label": "analisador-vendas",
       "stack": "Python · Streamlit · Pandas"
@@ -21,21 +16,6 @@
       "repo": "crypto-tech",
       "label": "crypto-tech",
       "stack": "Python · Streamlit · Pandas"
-    },
-    {
-      "repo": "escalacao-brasileirao",
-      "label": "escalacao-brasileirao",
-      "stack": "Django · SQLite"
-    },
-    {
-      "repo": "cartao-identidade-academica",
-      "label": "cartao-identidade",
-      "stack": "Django · SQLite"
-    },
-    {
-      "repo": "api-rest-spring-boot",
-      "label": "api-rest-spring-boot",
-      "stack": "Java · Spring · MySQL"
     }
   ]
 }

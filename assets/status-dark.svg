@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 422" width="830" height="422" role="img" aria-label="Atividade recente nos repositórios, atualizada em 06/11/2026">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 238" width="830" height="238" role="img" aria-label="Atividade recente nos repositórios, atualizada em 06/11/2026">
 <style>
 .ac{color:#60A5FA;animation:cor 12s ease-in-out infinite}@keyframes cor{0%,100%{color:#60A5FA}50%{color:#34D399}}@media (prefers-reduced-motion:reduce){.ac{animation:none}}
 .k{font:600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;letter-spacing:.14em;fill:#A09E97}
 .n{font:600 17px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;fill:#EDEBE6}
 .s{font:400 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;fill:#A09E97}
 </style>
-<rect width="830" height="422" rx="20" fill="#0E0E0F"/>
-<rect x="0.5" y="0.5" width="829" height="421" rx="19.5" fill="none" stroke="#2C2C2E"/>
+<rect width="830" height="238" rx="20" fill="#0E0E0F"/>
+<rect x="0.5" y="0.5" width="829" height="237" rx="19.5" fill="none" stroke="#2C2C2E"/>
 <text class="k" x="36" y="40">ATIVIDADE RECENTE</text>
 <text class="k" x="794" y="40" text-anchor="end">ATUALIZADO EM 06/11/2026</text>
 <line x1="36" y1="54" x2="794" y2="54" stroke="#2C2C2E"/>
@@ -18,25 +18,9 @@
 <text class="s" x="36" y="142">Python · Streamlit · Pandas</text>
 <rect x="400" y="114" width="280" height="6" rx="3" fill="#2C2C2E"/>
 <rect x="400" y="114" width="278" height="6" rx="3" class="ac" fill="currentColor"/>
-<text class="s" x="794" y="124" text-anchor="end">há 2 d</text><text class="n" x="36" y="170">escalacao-brasileirao</text>
-<text class="s" x="36" y="188">Django · SQLite</text>
+<text class="s" x="794" y="124" text-anchor="end">há 2 d</text><text class="n" x="36" y="170">prolobby</text>
+<text class="s" x="36" y="188">Next.js · NestJS · Postgres</text>
 <rect x="400" y="160" width="280" height="6" rx="3" fill="#2C2C2E"/>
 <rect x="400" y="160" width="278" height="6" rx="3" class="ac" fill="currentColor"/>
-<text class="s" x="794" y="170" text-anchor="end">há 2 d</text><text class="n" x="36" y="216">api-rest-spring-boot</text>
-<text class="s" x="36" y="234">Java · Spring · MySQL</text>
-<rect x="400" y="206" width="280" height="6" rx="3" fill="#2C2C2E"/>
-<rect x="400" y="206" width="278" height="6" rx="3" class="ac" fill="currentColor"/>
-<text class="s" x="794" y="216" text-anchor="end">há 2 d</text><text class="n" x="36" y="262">prolobby</text>
-<text class="s" x="36" y="280">Next.js · NestJS · Postgres</text>
-<rect x="400" y="252" width="280" height="6" rx="3" fill="#2C2C2E"/>
-<rect x="400" y="252" width="278" height="6" rx="3" class="ac" fill="currentColor"/>
-<text class="s" x="794" y="262" text-anchor="end">há 3 d</text><text class="n" x="36" y="308">game-vault</text>
-<text class="s" x="36" y="326">Django · SQLite</text>
-<rect x="400" y="298" width="280" height="6" rx="3" fill="#2C2C2E"/>
-<rect x="400" y="298" width="278" height="6" rx="3" class="ac" fill="currentColor"/>
-<text class="s" x="794" y="308" text-anchor="end">há 3 d</text><text class="n" x="36" y="354">cartao-identidade</text>
-<text class="s" x="36" y="372">Django · SQLite</text>
-<rect x="400" y="344" width="280" height="6" rx="3" fill="#2C2C2E"/>
-<rect x="400" y="344" width="230" height="6" rx="3" fill="#A09E97" fill-opacity=".45"/>
-<text class="s" x="794" y="354" text-anchor="end">há 2 meses</text>
+<text class="s" x="794" y="170" text-anchor="end">há 3 d</text>
 </svg>
