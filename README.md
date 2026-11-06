@@ -8,8 +8,8 @@
 <h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-sobre-dark.svg?v=b98ad43c"><img src="assets/h-sobre-light.svg?v=810f34b5" alt="Sobre" width="830"></picture></h2>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg?v=f210663e">
-  <img src="assets/about-light.svg?v=bea14dee" alt="Sobre mim: software, dados e IA com aplicação prática. Estudante do 6º período de Sistemas de Informação na FEPI e estagiário full stack em sistemas de saúde." width="830">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg?v=6f3f31ea">
+  <img src="assets/about-light.svg?v=d7a0be5a" alt="Sobre mim: software, dados e IA com aplicação prática. Estudante do 6º período de Sistemas de Informação na FEPI e estagiário full stack em sistemas de saúde." width="830">
 </picture>
 
 <p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flow-dark.svg?v=87d1a7bd"><img src="assets/flow-light.svg?v=0634bb6b" alt="Pontos dispersos se organizam em barras: dado bruto vira decisão" width="830"></picture></p>
