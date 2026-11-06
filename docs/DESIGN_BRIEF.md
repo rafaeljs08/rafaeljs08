@@ -30,6 +30,8 @@ Todo o resto (textos, bordas, grade de pontos, moldura do avatar, tiles da stack
 
 **Títulos das seções:** imagens geradas por `scripts/build.py` (`assets/h-*.svg`) dentro de um `<h2>` com `alt`. **Cache:** o build grava em cada imagem do README um `?v=<hash>`, para o GitHub redesenhar quando o arquivo muda.
 
+**Títulos das seções:** viram imagens geradas por `scripts/build.py` (`assets/h-*.svg`), com número (`.ac2`) e nome (`.ac`), dentro de um `<h2>` com `alt`. **Cache:** o build grava em cada imagem do README um `?v=<hash>`, para o GitHub redesenhar quando o arquivo muda.
+
 ## Tipografia
 Títulos: Georgia (serifa, itálico no acento). Detalhes: monoespaçada do sistema. Sem fontes externas.
 
