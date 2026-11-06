@@ -48,9 +48,9 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 
 <h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-stack-dark.svg?v=cec70039"><img src="assets/h-stack-light.svg?v=c9014826" alt="Stack" width="830"></picture></h2>
 
-<img src="assets/stack.svg?v=64fbaeae" alt="Stack: Python, PHP, JavaScript, Java, MySQL, Django, Pandas, Streamlit, n8n, Git, GitHub" width="830">
+<img src="assets/stack.svg?v=eae0f495" alt="Stack: Python, PHP, JavaScript, Java, MySQL, Pandas, Streamlit, n8n, Git, GitHub" width="830">
 
-Também: LangChain e RAG, Copilot Studio, SQL avançado (procedures e functions), APIs REST, HTML/CSS, SQLite, Matplotlib.
+Também: LangChain e RAG, Copilot Studio, SQL avançado (procedures e functions), APIs REST, HTML/CSS, Matplotlib.
 
 <h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-formacao-dark.svg?v=8a331925"><img src="assets/h-formacao-light.svg?v=0f455d1e" alt="Formação e cursos" width="830"></picture></h2>
 

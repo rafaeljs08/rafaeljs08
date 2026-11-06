@@ -122,7 +122,7 @@ def hero(t):
 
 STACK = [("Python", "python-original"), ("PHP", "php-original"),
          ("JavaScript", "javascript-original"), ("Java", "java-original"),
-         ("MySQL", "mysql-original"), ("Django", "django-plain"),
+         ("MySQL", "mysql-original"),
          ("Pandas", "pandas-original"), ("Streamlit", "streamlit-original"),
          ("n8n", "n8n-original"), ("Git", "git-original"), ("GitHub", "github-original")]
 
