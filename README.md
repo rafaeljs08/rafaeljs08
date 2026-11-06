@@ -52,8 +52,8 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 | [api-rest-spring-boot](https://github.com/rafaeljs08/api-rest-spring-boot) | API REST acadêmica com persistência relacional | Java · Spring Boot · MySQL |
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg?v=9241466b">
-  <img src="assets/status-light.svg?v=7e267af9" alt="Atividade recente nos repositórios, com a data do último commit de cada projeto" width="830">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg?v=a7f8c7b5">
+  <img src="assets/status-light.svg?v=a4a78f74" alt="Atividade recente nos repositórios, com a data do último commit de cada projeto" width="830">
 </picture>
 
 <h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-stack-dark.svg?v=cec70039"><img src="assets/h-stack-light.svg?v=c9014826" alt="Stack" width="830"></picture></h2>
