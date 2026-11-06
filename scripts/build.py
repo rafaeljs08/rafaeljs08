@@ -31,12 +31,10 @@ MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 
 
 def accent_css(t):
-    """Destaque que alterna entre azul e verde (só esses dois tons). .ac e .ac2 ficam defasados: quando um está azul, o outro está verde."""
-    return (f".ac{{color:{t['accent']};animation:cor 9s ease-in-out infinite}}"
+    """Único destaque do perfil: alterna só entre azul e verde, em ciclo lento (12 s)."""
+    return (f".ac{{color:{t['accent']};animation:cor 12s ease-in-out infinite}}"
             f"@keyframes cor{{0%,100%{{color:{t['accent']}}}50%{{color:{t['accent2']}}}}}"
-            f".ac2{{color:{t['accent2']};animation:cor 9s ease-in-out -4.5s infinite}}"
-            "@media (prefers-reduced-motion:reduce){.ac,.ac2{animation:none}}"
-            f"@media (prefers-reduced-motion:reduce){{.ac2{{color:{t['accent2']}}}}}")
+            "@media (prefers-reduced-motion:reduce){.ac{animation:none}}")
 
 
 def esc(s):
@@ -67,7 +65,7 @@ def typing(t):
             f".g{k}{{animation:g{k} {DUR}s linear infinite;opacity:0}}"
             f".m{k}{{animation:m{k} {DUR}s linear infinite}}")
         body.append(
-            f'<g class="g{k}"><text class="t ac" x="36" y="52" textLength="{full:.1f}" lengthAdjust="spacing">{esc(ph)}</text>'
+            f'<g class="g{k}"><text class="t" x="36" y="52" textLength="{full:.1f}" lengthAdjust="spacing">{esc(ph)}</text>'
             f'<g class="m{k}"><rect x="36" y="28" width="{full + 24:.1f}" height="32" fill="{t["bg"]}"/>'
             f'<g class="ac"><rect class="cr" x="36" y="32" width="2.5" height="24" fill="currentColor"/></g></g></g>')
     css.append(".cr{animation:b 1s steps(1) infinite}@keyframes b{50%{opacity:0}}")
@@ -97,28 +95,27 @@ def hero(t):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-label="Olá, me chamo Rafael Junqueira. Dados brutos, decisões claras.">
 <style>
 {accent_css(t)}
-.k{{font:600 12px {MONO};letter-spacing:.14em;fill:currentColor}}
-.h{{font:400 52px/1 {SERIF};fill:currentColor;letter-spacing:-.02em}}
+.k{{font:600 12px {MONO};letter-spacing:.14em;fill:{t['muted']}}}
+.h{{font:400 52px/1 {SERIF};fill:{t['ink']};letter-spacing:-.02em}}
 .a{{font-style:italic;fill:currentColor}}
-.t{{font:500 22px {MONO};fill:currentColor}}
+.t{{font:500 22px {MONO};fill:{t['ink']}}}
 {tcss}
-.d{{fill:currentColor;opacity:.85;animation:p 3.6s ease-in-out infinite}}
+.d{{fill:{t['dot']};opacity:.85;animation:p 3.6s ease-in-out infinite}}
 @keyframes p{{0%,100%{{opacity:.25}}50%{{opacity:.9}}}}
 @media (prefers-reduced-motion:reduce){{.d{{animation:none;opacity:.7}}}}
 </style>
 <rect width="{W}" height="{h}" rx="20" fill="{t['bg']}"/>
-<rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="19.5" fill="none" class="ac" stroke="currentColor" stroke-opacity=".5"/>
+<rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="19.5" fill="none" stroke="{t['rule']}"/>
 {tbody}
-<text class="h ac2" x="36" y="132">Dados brutos,</text>
+<text class="h" x="36" y="132">Dados brutos,</text>
 <text class="h a ac" x="36" y="192">decisões claras.</text>
 <rect class="ac" x="36" y="228" width="44" height="3" fill="currentColor"/>
-<text class="k ac2" x="36" y="262">PYTHON · DADOS · IA APLICADA</text>
-<g class="ac">{''.join(dots)}</g>
+<text class="k" x="36" y="262">PYTHON · DADOS · IA APLICADA</text>
+{''.join(dots)}
 <defs><clipPath id="c"><rect x="{ax}" y="{ay}" width="{size}" height="{size}" rx="18"/></clipPath></defs>
 <rect x="{ax - 8}" y="{ay - 8}" width="{size + 16}" height="{size + 16}" rx="24" fill="{t['panel']}"/>
-<rect x="{ax - 8}" y="{ay - 8}" width="{size + 16}" height="{size + 16}" rx="24" fill="none" class="ac2" stroke="currentColor" stroke-width="2"/>
 <image href="data:image/png;base64,{avatar}" x="{ax}" y="{ay}" width="{size}" height="{size}" clip-path="url(#c)" preserveAspectRatio="xMidYMid slice"/>
-<text class="k ac2" x="{W - 36}" y="{h - 22}" text-anchor="end">ITAJUBÁ · MG</text>
+<text class="k" x="{W - 36}" y="{h - 22}" text-anchor="end">ITAJUBÁ · MG</text>
 </svg>
 """
 
@@ -142,7 +139,7 @@ def stack():
         svg = re.sub(r"^<\?xml[^>]*\?>\s*", "", svg)
         inner = re.sub(r"<svg[^>]*>", "", svg, count=1).replace("</svg>", "")
         out.append(
-            f'<g transform="translate({x:.1f} 0)"><rect width="{tw}" height="{th}" rx="14" fill="#ECE9E2" class="ac" stroke="currentColor" stroke-opacity=".6" stroke-width="1.5"/>'
+            f'<g transform="translate({x:.1f} 0)"><rect width="{tw}" height="{th}" rx="14" fill="#ECE9E2" stroke="#CFCBC3"/>'
             f'<svg x="12" y="12" width="40" height="40" viewBox="0 0 128 128">{inner}</svg>'
             f'<text x="{tw / 2}" y="76" text-anchor="middle" font-family="{MONO}" font-size="10.5" font-weight="600" fill="#111111">{label}</text></g>')
     names = ", ".join(l for l, _ in STACK)
@@ -168,16 +165,16 @@ def contact(t, key, label, text, w):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{esc(label.title())}: {esc(text)}">
 <style>
 {accent_css(t)}
-.k{{font:600 11px {MONO};letter-spacing:.14em;fill:currentColor}}
-.v{{font:600 13.5px {MONO};fill:currentColor}}
-.ar{{font:400 20px {SANS};fill:currentColor}}
+.k{{font:600 11px {MONO};letter-spacing:.14em;fill:{t['muted']}}}
+.v{{font:600 13.5px {MONO};fill:{t['ink']}}}
+.ar{{font:400 20px {SANS};fill:{t['muted']}}}
 </style>
-<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="18" fill="{t['bg']}" class="ac" stroke="currentColor" stroke-opacity=".5"/>
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="18" fill="{t['bg']}" stroke="{t['rule']}"/>
 <circle cx="42" cy="38" r="21" fill="{t['panel']}"/>
 <g transform="translate(30 26)" class="ac" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{ICONS[key]}</g>
-<text class="k ac2" x="76" y="33">{label}</text>
-<text class="v ac" x="76" y="53">{esc(text)}</text>
-<text class="ar ac" x="{w - 24}" y="44" text-anchor="end">↗</text>
+<text class="k" x="76" y="33">{label}</text>
+<text class="v" x="76" y="53">{esc(text)}</text>
+<text class="ar" x="{w - 24}" y="44" text-anchor="end">↗</text>
 </svg>
 """
 
@@ -195,22 +192,22 @@ def about(t):
     rows = ""
     for i, (k, v) in enumerate(facts):
         y = 62 + i * 70
-        rows += (f'<text class="k ac2" x="552" y="{y}">{k}</text><text class="f ac" x="552" y="{y + 30}">{esc(v)}</text>')
+        rows += (f'<text class="k" x="552" y="{y}">{k}</text><text class="f" x="552" y="{y + 30}">{esc(v)}</text>')
         if i < len(facts) - 1:
             rows += f'<line x1="552" y1="{y + 46}" x2="{W - 36}" y2="{y + 46}" stroke="{t["rule"]}"/>'
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-label="Sobre mim: software, dados e IA com aplicação prática. Foco em dados, IA e backend; estágio full stack desde 03/2026; Sistemas de Informação na FEPI, 6º período.">
 <style>
 {accent_css(t)}
-.k{{font:600 12px {MONO};letter-spacing:.14em;fill:currentColor}}
-.t{{font:400 34px {SERIF};fill:currentColor;letter-spacing:-.015em}}
+.k{{font:600 12px {MONO};letter-spacing:.14em;fill:{t['muted']}}}
+.t{{font:400 34px {SERIF};fill:{t['ink']};letter-spacing:-.015em}}
 .a{{font-style:italic;fill:currentColor}}
 .b{{font:400 15.5px {SANS};fill:{t['ink']}}}
-.f{{font:400 21px {SERIF};fill:currentColor}}
+.f{{font:400 21px {SERIF};fill:{t['ink']}}}
 </style>
 <rect width="{W}" height="{h}" rx="20" fill="{t['bg']}"/>
-<rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="19.5" fill="none" class="ac" stroke="currentColor" stroke-opacity=".5"/>
-<text class="k ac" x="36" y="46">SOBRE MIM</text>
-<text class="t ac2" x="36" y="92">Software, dados e IA</text>
+<rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="19.5" fill="none" stroke="{t['rule']}"/>
+<text class="k" x="36" y="46">SOBRE MIM</text>
+<text class="t" x="36" y="92">Software, dados e IA</text>
 <text class="t a ac" x="36" y="132">com aplicação prática.</text>
 {lines}
 <line x1="516" y1="40" x2="516" y2="{h - 40}" stroke="{t['rule']}"/>
@@ -229,12 +226,13 @@ def heading(t, num, title):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-label="{esc(title)}">
 <style>
 {accent_css(t)}
-.k{{font:600 12px {MONO};letter-spacing:.14em;fill:currentColor}}
-.t{{font:400 30px {SERIF};letter-spacing:-.015em;fill:currentColor}}
+.k{{font:600 12px {MONO};letter-spacing:.14em;fill:{t['muted']}}}
+.t{{font:400 30px {SERIF};letter-spacing:-.015em;fill:{t['ink']}}}
 </style>
-<text class="k ac2" x="2" y="36">{num}</text>
-<text class="t ac" x="40" y="40">{esc(title)}</text>
+<text class="k" x="2" y="36">{num}</text>
+<text class="t" x="40" y="40">{esc(title)}</text>
 <line x1="0" y1="52" x2="{W}" y2="52" stroke="{t['rule']}"/>
+<rect class="ac" x="0" y="51" width="32" height="3" fill="currentColor"/>
 </svg>
 """
 
@@ -272,22 +270,22 @@ def status(t, rows, today):
     for i, (label, stack, days) in enumerate(rows):
         y = top + i * rh
         fill = max(0.06, 1 - days / 365)
-        out.append(f"""<text class="n ac" x="36" y="{y}">{esc(label)}</text>
+        out.append(f"""<text class="n" x="36" y="{y}">{esc(label)}</text>
 <text class="s" x="36" y="{y + 18}">{esc(stack)}</text>
 <rect x="400" y="{y - 10}" width="280" height="6" rx="3" fill="{t['rule']}"/>
-<rect x="400" y="{y - 10}" width="{280 * fill:.0f}" height="6" rx="3" class="ac" fill="currentColor"/>
+<rect x="400" y="{y - 10}" width="{280 * fill:.0f}" height="6" rx="3" {'class="ac" fill="currentColor"' if days <= 45 else f'fill="{t["muted"]}" fill-opacity=".45"'}/>
 <text class="s" x="{W - 36}" y="{y}" text-anchor="end">{rel(days)}</text>""")
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-label="Atividade recente nos repositórios, atualizada em {today:%d/%m/%Y}">
 <style>
 {accent_css(t)}
-.k{{font:600 12px {MONO};letter-spacing:.14em;fill:currentColor}}
-.n{{font:600 17px {MONO};fill:currentColor}}
+.k{{font:600 12px {MONO};letter-spacing:.14em;fill:{t['muted']}}}
+.n{{font:600 17px {MONO};fill:{t['ink']}}}
 .s{{font:400 14px {MONO};fill:{t['muted']}}}
 </style>
 <rect width="{W}" height="{h}" rx="20" fill="{t['bg']}"/>
-<rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="19.5" fill="none" class="ac" stroke="currentColor" stroke-opacity=".5"/>
-<text class="k ac2" x="36" y="40">ATIVIDADE RECENTE</text>
-<text class="k ac2" x="{W - 36}" y="40" text-anchor="end">ATUALIZADO EM {today:%d/%m/%Y}</text>
+<rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="19.5" fill="none" stroke="{t['rule']}"/>
+<text class="k" x="36" y="40">ATIVIDADE RECENTE</text>
+<text class="k" x="{W - 36}" y="40" text-anchor="end">ATUALIZADO EM {today:%d/%m/%Y}</text>
 <line x1="36" y1="54" x2="{W - 36}" y2="54" stroke="{t['rule']}"/>
 {''.join(out)}
 </svg>
