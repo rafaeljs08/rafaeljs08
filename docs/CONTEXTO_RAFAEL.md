@@ -38,3 +38,6 @@ Comparativo em `docs/comparativo-imagens.png` (três opções no estilo "Sinal �
 - **C. Grafo de agentes/RAG:** nós quietos e um caminho em destaque (azul/verde). **Rafael gostou e quer fazer quando tiver um projeto de agentes de IA.** Só entra no perfil quando existir um projeto que a comprove.
 - **Descartado:** GIFs prontos do repositório Cool-GIFs-For-GitHub (estilo genérico, autoria e licença das GIFs não informadas, links que podem expirar, arquivos pesados).
 - **Skills:** `/taste`, `/findskill` e `/design-sync` não existem ou não se aplicam na sessão em nuvem. `find-skills` é uma skill instalada só no app local do Rafael.
+
+## Projetos retirados do perfil (06/11/2026)
+Rafael pediu para tirar do README do perfil, por agregarem pouco: `escalacao-brasileirao`, `cartao-identidade-academica`, `api-rest-spring-boot` e `Game_Vault`. Os repositórios continuam na conta dele. Projetos que seguem no perfil: ProLobby, `analisador-vendas-marketing` e `crypto-tech`.

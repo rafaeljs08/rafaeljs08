@@ -252,33 +252,6 @@ def stamp_readme():
         readme.write_text(novo, encoding="utf-8")
 
 
-CARDS = [  # arquivo em assets/telas, nome, stack, largura
-    ("game-vault", "game-vault", "Django · SQLite"),
-    ("escalacao-brasileirao", "escalacao-brasileirao", "Django · SQLite"),
-    ("cartao-identidade", "cartao-identidade", "Django · SQLite"),
-]
-
-
-def card(t, slug, name, stack):
-    """Cartão de projeto: tela real (já suavizada) em moldura calma. Cada um vira um link no README."""
-    w, h = 266, 236
-    img = base64.b64encode((ASSETS / "telas" / f"{slug}.jpg").read_bytes()).decode()
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{esc(name)}: {esc(stack)}">
-<style>
-.n{{font:600 14px {MONO};fill:{t['ink']}}}
-.s{{font:400 12px {MONO};fill:{t['muted']}}}
-.ar{{font:400 16px {SANS};fill:{t['muted']}}}
-</style>
-<defs><clipPath id="c"><rect x="8" y="8" width="250" height="156" rx="12"/></clipPath></defs>
-<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="18" fill="{t['bg']}" stroke="{t['rule']}"/>
-<image href="data:image/jpeg;base64,{img}" x="8" y="8" width="250" height="156" clip-path="url(#c)" preserveAspectRatio="xMidYMid slice"/>
-<rect x="8.5" y="8.5" width="249" height="155" rx="11.5" fill="none" stroke="{t['rule']}"/>
-<text class="n" x="18" y="196">{esc(name)}</text>
-<text class="s" x="18" y="217">{esc(stack)}</text>
-<text class="ar" x="{w - 20}" y="198" text-anchor="end">↗</text>
-</svg>
-"""
-
 
 def flow(t):
     """Separador animado: dados dispersos se organizam e viram barras, uma delas em destaque."""
@@ -402,8 +375,6 @@ def main():
         (ASSETS / f"status-{name}.svg").write_text(status(t, rows, today), encoding="utf-8")
         (ASSETS / f"about-{name}.svg").write_text(about(t), encoding="utf-8")
         (ASSETS / f"flow-{name}.svg").write_text(flow(t), encoding="utf-8")
-        for slug, fname, stk in CARDS:
-            (ASSETS / f"card-{slug}-{name}.svg").write_text(card(t, slug, fname, stk), encoding="utf-8")
         for slug, num, title in HEADINGS:
             (ASSETS / f"h-{slug}-{name}.svg").write_text(heading(t, num, title), encoding="utf-8")
         for key, label, text, w in CONTACTS:

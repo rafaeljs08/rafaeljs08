@@ -35,25 +35,15 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 
 <h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-projetos-dark.svg?v=106c254b"><img src="assets/h-projetos-light.svg?v=fcab8d50" alt="Projetos selecionados" width="830"></picture></h2>
 
-<p>
-<a href="https://github.com/rafaeljs08/Game_Vault"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-game-vault-dark.svg?v=a571a678"><img src="assets/card-game-vault-light.svg?v=7ef21f18" alt="game-vault: dashboard da biblioteca de jogos (Django)" width="266"></picture></a>
-<a href="https://github.com/rafaeljs08/escalacao-brasileirao"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-escalacao-brasileirao-dark.svg?v=e0a442bf"><img src="assets/card-escalacao-brasileirao-light.svg?v=9f9a0866" alt="escalacao-brasileirao: campo interativo com a escalação (Django)" width="266"></picture></a>
-<a href="https://github.com/rafaeljs08/cartao-identidade-academica"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-cartao-identidade-dark.svg?v=f0a92208"><img src="assets/card-cartao-identidade-light.svg?v=bd50a277" alt="cartao-identidade: cartões digitais de alunos (Django)" width="266"></picture></a>
-</p>
-
 | Projeto | Problema → solução | Stack |
 |---|---|---|
 | [ProLobby](https://github.com/rafaeljs08/ProLobby.com) | Matchmaking para jogadores solo de EA FC Pro Clubs: personagem verificado por print, fila por posição e partidas equilibradas por elo, coordenadas pelo Discord. Projeto em equipe, em desenvolvimento | Next.js · NestJS · PostgreSQL |
-| [Game_Vault](https://github.com/rafaeljs08/Game_Vault) | Plataforma Django para gerenciar coleção de jogos: catálogo global (administrador) e biblioteca pessoal com wishlist, avaliações e estatísticas. Projeto em dupla | Django · SQLite |
 | [analisador-vendas-marketing](https://github.com/rafaeljs08/analisador-vendas-marketing) | Pequenos varejos têm vendas em planilha, mas sem BI. Envia-se um CSV e recebe-se KPIs, ranking de produtos e sugestões de marketing | Python · Streamlit · Pandas |
 | [crypto-tech](https://github.com/rafaeljs08/crypto-tech) | Acompanhar e comparar criptomoedas em tempo real, em USD ou BRL, com histórico de até 365 dias | Python · Streamlit · Pandas · Matplotlib · CoinGecko |
-| [escalacao-brasileirao](https://github.com/rafaeljs08/escalacao-brasileirao) | Montar um time com jogadores de qualquer clube da Série A em um campo interativo, com CRUD completo e validação por formação | Django · SQLite |
-| [cartao-identidade-academica](https://github.com/rafaeljs08/cartao-identidade-academica) | Cartão digital de aluno (nome, curso e bio) com galeria e painel administrativo | Django · SQLite |
-| [api-rest-spring-boot](https://github.com/rafaeljs08/api-rest-spring-boot) | API REST acadêmica com persistência relacional | Java · Spring Boot · MySQL |
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg?v=a7f8c7b5">
-  <img src="assets/status-light.svg?v=a4a78f74" alt="Atividade recente nos repositórios, com a data do último commit de cada projeto" width="830">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg?v=904f9127">
+  <img src="assets/status-light.svg?v=3515e40f" alt="Atividade recente nos repositórios, com a data do último commit de cada projeto" width="830">
 </picture>
 
 <h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-stack-dark.svg?v=cec70039"><img src="assets/h-stack-light.svg?v=c9014826" alt="Stack" width="830"></picture></h2>
