@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 238" width="830" height="238" role="img" aria-label="Atividade recente nos repositórios, atualizada em 09/11/2026">
+<style>
+.ac{color:#1D4ED8;animation:cor 12s ease-in-out infinite}@keyframes cor{0%,100%{color:#1D4ED8}50%{color:#047857}}@media (prefers-reduced-motion:reduce){.ac{animation:none}}
+.k{font:600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;letter-spacing:.14em;fill:#5F5E59}
+.n{font:600 17px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;fill:#111111}
+.s{font:400 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;fill:#5F5E59}
+</style>
+<rect width="830" height="238" rx="20" fill="#F4F2EE"/>
+<rect x="0.5" y="0.5" width="829" height="237" rx="19.5" fill="none" stroke="#CFCBC3"/>
+<text class="k" x="36" y="40">ATIVIDADE RECENTE</text>
+<text class="k" x="794" y="40" text-anchor="end">ATUALIZADO EM 09/11/2026</text>
+<line x1="36" y1="54" x2="794" y2="54" stroke="#CFCBC3"/>
+<text class="n" x="36" y="78">analisador-vendas</text>
+<text class="s" x="36" y="96">Python · Streamlit · Pandas</text>
+<rect x="400" y="68" width="280" height="6" rx="3" fill="#CFCBC3"/>
+<rect x="400" y="68" width="276" height="6" rx="3" class="ac" fill="currentColor"/>
+<text class="s" x="794" y="78" text-anchor="end">há 5 d</text><text class="n" x="36" y="124">crypto-tech</text>
+<text class="s" x="36" y="142">Python · Streamlit · Pandas</text>
+<rect x="400" y="114" width="280" height="6" rx="3" fill="#CFCBC3"/>
+<rect x="400" y="114" width="276" height="6" rx="3" class="ac" fill="currentColor"/>
+<text class="s" x="794" y="124" text-anchor="end">há 5 d</text><text class="n" x="36" y="170">prolobby</text>
+<text class="s" x="36" y="188">Next.js · NestJS · Postgres</text>
+<rect x="400" y="160" width="280" height="6" rx="3" fill="#CFCBC3"/>
+<rect x="400" y="160" width="275" height="6" rx="3" class="ac" fill="currentColor"/>
+<text class="s" x="794" y="170" text-anchor="end">há 6 d</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 56" width="830" height="56" role="img" aria-label="Contato">
+<style>
+.ac{color:#1D4ED8;animation:cor 12s ease-in-out infinite}@keyframes cor{0%,100%{color:#1D4ED8}50%{color:#047857}}@media (prefers-reduced-motion:reduce){.ac{animation:none}}
+.k{font:600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;letter-spacing:.14em;fill:#5F5E59}
+.t{font:400 30px Georgia, 'Times New Roman', serif;letter-spacing:-.015em;fill:#111111}
+</style>
+<text class="k" x="2" y="36">07</text>
+<text class="t" x="40" y="40">Contato</text>
+<line x1="0" y1="52" x2="830" y2="52" stroke="#CFCBC3"/>
+<rect class="ac" x="0" y="51" width="32" height="3" fill="currentColor"/>
+</svg>

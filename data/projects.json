@@ -1,0 +1,21 @@
+{
+  "owner": "rafaeljs08",
+  "projects": [
+    {
+      "repo": "ProLobby.com",
+      "label": "prolobby",
+      "stack": "Next.js · NestJS · Postgres",
+      "branch": "dev"
+    },
+    {
+      "repo": "analisador-vendas-marketing",
+      "label": "analisador-vendas",
+      "stack": "Python · Streamlit · Pandas"
+    },
+    {
+      "repo": "crypto-tech",
+      "label": "crypto-tech",
+      "stack": "Python · Streamlit · Pandas"
+    }
+  ]
+}
