@@ -18,6 +18,7 @@
 
 - **Estagiando** como desenvolvedor full stack na Support Informática, em sistemas web para a área da saúde
 - **Contribuindo** no [ProLobby](https://github.com/rafaeljs08/ProLobby.com), plataforma de matchmaking competitivo e identidade verificada para EA FC Pro Clubs, desenvolvida em equipe
+- **Construindo** o Skills sem Medo, um site bilíngue (PT/EN) que ensina iniciantes a achar, instalar e revisar skills do Claude Code com segurança
 - **Aprofundando:** LangChain, arquiteturas RAG e automação de fluxos com n8n
 - **Cursando:** Sistemas de Informação, 6º período, na FEPI
 
@@ -38,6 +39,7 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 | Projeto | Problema → solução | Stack |
 |---|---|---|
 | [ProLobby](https://github.com/rafaeljs08/ProLobby.com) | Matchmaking para jogadores solo de EA FC Pro Clubs: personagem verificado por print, fila por posição e partidas equilibradas por elo, coordenadas pelo Discord. Projeto em equipe, em desenvolvimento | Next.js · NestJS · PostgreSQL |
+| Skills sem Medo | Iniciantes travam no medo de instalar skills maliciosas e quase não há material em português. Site estático bilíngue com fichas de skills, selo de revisão por risco e guias de segurança. Em desenvolvimento | Astro · Pagefind |
 | [analisador-vendas-marketing](https://github.com/rafaeljs08/analisador-vendas-marketing) | Pequenos varejos têm vendas em planilha, mas sem BI. Envia-se um CSV e recebe-se KPIs, ranking de produtos e sugestões de marketing | Python · Streamlit · Pandas |
 | [crypto-tech](https://github.com/rafaeljs08/crypto-tech) | Acompanhar e comparar criptomoedas em tempo real, em USD ou BRL, com histórico de até 365 dias | Python · Streamlit · Pandas · Matplotlib · CoinGecko |
 
@@ -50,7 +52,7 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 
 <img src="assets/stack.svg?v=eae0f495" alt="Stack: Python, PHP, JavaScript, Java, MySQL, Pandas, Streamlit, n8n, Git, GitHub" width="830">
 
-Também: LangChain e RAG, Copilot Studio, SQL avançado (procedures e functions), APIs REST, HTML/CSS, Matplotlib.
+Também: LangChain e RAG, Copilot Studio, SQL avançado (procedures e functions), APIs REST, HTML/CSS, Matplotlib, Astro.
 
 <h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-formacao-dark.svg?v=8a331925"><img src="assets/h-formacao-light.svg?v=0f455d1e" alt="Formação e cursos" width="830"></picture></h2>
 

@@ -8,6 +8,11 @@
       "branch": "dev"
     },
     {
+      "repo": "skills-sem-medo",
+      "label": "skills-sem-medo",
+      "stack": "Astro · Pagefind"
+    },
+    {
       "repo": "analisador-vendas-marketing",
       "label": "analisador-vendas",
       "stack": "Python · Streamlit · Pandas"
