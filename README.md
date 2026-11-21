@@ -44,8 +44,8 @@ Desenvolvimento, manutenção e aprimoramento de sistemas web para gestão hospi
 | [crypto-tech](https://github.com/rafaeljs08/crypto-tech) | Acompanhar e comparar criptomoedas em tempo real, em USD ou BRL, com histórico de até 365 dias | Python · Streamlit · Pandas · Matplotlib · CoinGecko |
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg?v=32399f0d">
-  <img src="assets/status-light.svg?v=0e8a8341" alt="Atividade recente nos repositórios, com a data do último commit de cada projeto" width="830">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg?v=0317e9fc">
+  <img src="assets/status-light.svg?v=29d8c074" alt="Atividade recente nos repositórios, com a data do último commit de cada projeto" width="830">
 </picture>
 
 <h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-stack-dark.svg?v=cec70039"><img src="assets/h-stack-light.svg?v=c9014826" alt="Stack" width="830"></picture></h2>
